@@ -93,6 +93,10 @@ https://news.ycombinator.com/item?id=12700523
 
 ---
 
+Change Allocation Details example to explain why having DS props is 🙌🏽
+
+---
+
 # Components 🙌🏽
 
 > You have access to a more powerful styling construct than CSS class names. You have components!
@@ -133,9 +137,9 @@ Props ➡️ className
   <Block pa={4} bg="transparent" style={[s.flx_i, s.aic, s.jcc]}>
     <Heading3 mb={2}>good morning, matt</Heading3>
 
-    <Solid f={5} mb={3}>
+    <Text lh="copy" f={5} mb={3}>
       Here is your schedule for today.
-    </Solid>
+    </Text>
 
     <Stats
       jobs={jobsCount}
@@ -175,6 +179,53 @@ const ProductCard = props => (
   </Card>
 );
 ```
+
+---
+
+```
+          +--+
+          |  JSX
+          |  system-components
+Rebass ---+  styled-system
+          |  styled-component / emotion / fela / glamorous / Vue / etc.
+          |  CSS
+          +--+
+```
+
+---
+
+# styled-system setup
+
+---
+
+# styled-system theme
+
+---
+
+# styled-system first component
+
+* Heading
+* Text
+
+---
+
+Slicing components exercise (group)
+
+---
+
+Slicing components exercise (small groups)
+
+---
+
+# Macro Components
+
+---
+
+# Styled components?
+
+## attributes
+
+## Extending!
 
 ---
 
