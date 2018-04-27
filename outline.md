@@ -209,6 +209,14 @@ Rebass ---+  styled-system
 
 ---
 
+# Composing (Aldo card)
+
+---
+
+# Composing variations
+
+---
+
 Slicing components exercise (group)
 
 ---
