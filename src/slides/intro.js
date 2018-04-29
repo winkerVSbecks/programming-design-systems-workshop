@@ -1,5 +1,15 @@
 import React from 'react';
-import { SlideSet, Slide, Image, Link, CodePane } from 'spectacle';
+import {
+  SlideSet,
+  Slide,
+  Image,
+  Link,
+  CodePane,
+  Appear,
+  BlockQuote,
+  Quote,
+  Cite,
+} from 'spectacle';
 
 import { Heading, Text, List, ListItem, Emoji } from 'components';
 import images from 'images';
@@ -66,7 +76,9 @@ export const introSlides = (
           <ListItem>Pattern Lab</ListItem>
         </List>
       </div>
-      <Text textAlign="center">Sketch, Figma & Illustrator</Text>
+      <Text margin="4rem 0 0" textAlign="center">
+        Sketch, Figma & Illustrator
+      </Text>
     </Slide>
     <Slide>
       <Heading f={1} margin="0 0 4rem 0">
@@ -86,6 +98,77 @@ export const introSlides = (
 .Card__Action--secondary {/* */}
 `}
       />
+    </Slide>
+    <Slide>
+      <Heading f={1}>
+        <Emoji v="🚨🚨" /> Strong Opinions Ahead <Emoji v="🚨🚨" />
+      </Heading>
+    </Slide>
+    <Slide>
+      <Heading>
+        CSS Is A Bad API<br />For Design Systems
+      </Heading>
+    </Slide>
+    <Slide margin={0.25}>
+      <Text f={2}>
+        <Emoji v="😕" /> "Why is this here?"
+      </Text>
+      <Text f={2}>
+        <Emoji v="😰" /> "Will this change break something else?"
+      </Text>
+    </Slide>
+    <Slide
+      bgColor="secondary"
+      bgImage={images.cssWorkflow}
+      bgSize="fit"
+      bgRepeat="no-repeat"
+    >
+      <Appear>
+        <div>
+          <Text f={2} bgColor="primary" padding="2rem 1.5rem">
+            <Emoji v="🤷🏽‍" /> Have to write CSS to prototype new UI
+          </Text>
+        </div>
+      </Appear>
+      <Appear>
+        <div>
+          <Text f={2} bgColor="primary" padding="2rem 1.5rem">
+            <Emoji v="🔁" /> Have to keep two abstractions in sync
+          </Text>
+        </div>
+      </Appear>
+    </Slide>
+    <Slide>
+      <BlockQuote>
+        <Quote
+          textColor="secondary"
+          textSize="3rem"
+          margin="0 0 4rem 0"
+          style={{
+            lineHeight: 1.5,
+            borderLeft: '4px solid #fff',
+          }}
+        >
+          You have access to a more powerful styling construct than CSS class
+          names.<br />You have components!
+        </Quote>
+        <Cite>
+          <Link
+            textColor="secondary"
+            href="https://medium.learnreact.com/scale-fud-and-style-components-c0ce87ec9772"
+          >
+            Michael Chan
+          </Link>
+        </Cite>
+      </BlockQuote>
+    </Slide>
+    <Slide>
+      <Text>
+        You are the design system author. Your users are other developers.
+      </Text>
+      <Text>
+        Don't make your <i>users</i> write CSS. Let them compose components.
+      </Text>
     </Slide>
   </SlideSet>
 );
