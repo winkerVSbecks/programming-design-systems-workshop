@@ -111,9 +111,23 @@ Props ➡️ className
 ---
 
 ```js
+<Text bold fontSize={4}>
+  Hello 👋🏽
+</Text>
+```
+
+---
+
+```js
+<Box m={2} p={3} color="white" bg="blue" />
+```
+
+---
+
+```js
 <Heading
   level={2}
-  f={{ all: 5, m: 4, ns: 3 }}
+  f={5}
   lh="solid"
   color="navy"
   bg="light-purple"
@@ -168,6 +182,10 @@ Props ➡️ className
 
 ---
 
+https://cloudflare.github.io/cf-ui/#cf-component-box
+
+---
+
 ```js
 const ProductCard = props => (
   <Card width={256}>
@@ -182,23 +200,99 @@ const ProductCard = props => (
 
 ---
 
-```
-          +--+
-          |  JSX
-          |  system-components
-Rebass ---+  styled-system
-          |  styled-component / emotion / fela / glamorous / Vue / etc.
-          |  CSS
-          +--+
+![](tachyons-card.png)
+
+```js
+const ProfileCard = props => (
+  <Flex width={256} borderRadius={2}>
+    <Image w={3} h={3} borderRadius="100%" src={props.image} />
+    <Box p={2}>
+      <Subhead>{props.name}</Subhead>
+      <Small>{props.title}</Small>
+    </Box>
+  </Flex>
+);
 ```
 
 ---
 
-# styled-system setup
+# styled-system
+
+Design system utilities for styled-components and other css-in-js libraries
 
 ---
 
-# styled-system theme
+Props 🔀 Design System ➡️ CSS
+
+---
+
+```
+JSX
+ ️⬇️
+styled-system
+ ⬇️
+styled-component / emotion / fela / glamorous / Vue / etc.
+ ⬇️
+CSS
+```
+
+---
+
+# Styled Components
+
+```js
+const Button = styled.a`
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  width: 11rem;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+
+  ${props =>
+    props.primary &&
+    css`
+      background: white;
+      color: palevioletred;
+    `};
+`;
+```
+
+---
+
+# Styled System
+
+```js
+import styled from 'styled-components';
+import { space, width, fontSize, color, flex, alignSelf } from 'styled-system';
+
+const Box = styled.div`
+  ${space}
+  ${width}
+  ${fontSize}
+  ${color}
+  ${flex},
+  ${alignSelf}
+`;
+```
+
+---
+
+# Styled System setup
+
+```js
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
+
+const App = props => <ThemeProvider theme={theme}>{/* ... */}</ThemeProvider>;
+```
+
+---
+
+# Styled System Theme
 
 ---
 
@@ -206,6 +300,8 @@ Rebass ---+  styled-system
 
 * Heading
 * Text
+* Box
+* Absolute
 
 ---
 
@@ -229,11 +325,65 @@ Slicing components exercise (small groups)
 
 ---
 
-# Styled components?
+https://codesandbox.io/s/3kp4mqwk41
+
+```js
+const ImageCard = ({ tl, tr, br, bl, img, title, ratio, ...props }) => (
+  <Box position="relative" {...props}>
+    <BackgroundImage ratio={ratio} alt={title} src={img} />
+    <Absolute top={0} left={0}>
+      {tl}
+    </Absolute>
+    <Absolute top={0} right={0}>
+      {tr}
+    </Absolute>
+    <Absolute bottom={0} right={0}>
+      {br}
+    </Absolute>
+    <Absolute bottom={0} left={0}>
+      {bl}
+    </Absolute>
+  </Box>
+);
+```
+
+---
+
+# system-components
+
+```
+                     +--+
+                     |  styled-system
+system-components ---+  styled-component
+                     |  CSS
+                     +--+
+```
+
+---
+
+# Rebass
+
+```
+          +--+
+          |  JSX
+Rebass ---+  styled-system
+          |  styled-component
+          |  CSS
+          +--+
+```
+
+---
 
 ## attributes
 
 ## Extending!
+
+---
+
+# Other Frameworks
+
+* Vue https://github.com/c8r/vue-styled-system
+* Angular 🤷🏽‍♂️
 
 ---
 
