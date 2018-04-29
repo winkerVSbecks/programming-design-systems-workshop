@@ -20,25 +20,37 @@
 * Spacing: Padding & Margin
 * Sizing: Width & Height
 * Border: Colour, Width & Radius
-* Type Scale, Line Height & Font Weight
+* Type-Scale, Line Height & Font Weight
 * and…?
 
 ---
 
-Why a Component Based Design System?
+* Style Guides
+* Pattern Lab
+* Design System (sketch, figma & illustrator)
 
 ---
 
-You are the design system author. Your users are other developers.
+CSS Based Design Systems
+
+BEM/Modular CSS/etc.
+
+```css
+.Card {
+}
+.Card__Header {
+}
+.Card__Body {
+}
+.Card__Action--primary {
+}
+.Card__Action--secondary {
+}
+```
 
 ---
 
-Don't make your _users_ write CSS. Let them compose components.
-
----
-
-So, BEM or encapsulated CSS?
-If you have to write CSS to prototype new UI, you've already lost.
+# 🚨🚨 Strong Opinions Ahead 🚨🚨
 
 ---
 
@@ -48,6 +60,14 @@ If you have to write CSS to prototype new UI, you've already lost.
 😕 "Why is this here?"
 ️⁉ "Can I change this without breaking the product?"
 😰 "Why is this affecting other things on the page?"
+
+---
+
+> If you have to write CSS to prototype new UI, you've already lost.
+
+---
+
+Two abstractions that have to be mapped and kept in sync
 
 ---
 
@@ -62,9 +82,20 @@ If you have to write CSS to prototype new UI, you've already lost.
 
 ---
 
+You are the design system author. Your users are other developers.
+Don't make your _users_ write CSS. Let them compose components.
+
+---
+
+# Component Based Design System
+
+Example: https://cloudflare.github.io/cf-ui/#cf-builder-table
+
+---
+
 # Tachyons
 
-> Tachyons' main-purpose is not abbreviating inline-styles, but providing the developer with a consistent and scalable layouting-system for spacing and typography, which, at the end, is what arrives at the user.
+> Tachyons' main-purpose is not abbreviating inline-styles, but providing the developer with a consistent and scalable system for spacing, color, sizing and typography, which, at the end, is what arrives at the user.
 
 https://news.ycombinator.com/item?id=12700523
 
