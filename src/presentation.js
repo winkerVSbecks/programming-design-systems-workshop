@@ -1,6 +1,7 @@
 import React from 'react';
 import { Deck } from 'spectacle';
 import 'tachyons';
+import 'prismjs/components/prism-css';
 
 import createTheme from 'spectacle/lib/themes/default';
 import { colours, fontFamilies } from 'theme';

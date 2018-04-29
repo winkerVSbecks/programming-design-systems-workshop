@@ -1,8 +1,7 @@
 import React from 'react';
-import { Slide, SlideSet, Link, Image } from 'spectacle';
+import { Slide, SlideSet, Link } from 'spectacle';
 
 import { Text, Heading } from 'components';
-import images from 'images';
 
 export const outroSlides = (
   <SlideSet>
@@ -74,3 +73,5 @@ export const outroSlides = (
     </Slide>
   </SlideSet>
 );
+
+// https://dribbble.com/shots/3813751-Design-System
