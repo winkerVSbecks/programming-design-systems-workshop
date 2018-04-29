@@ -25,6 +25,16 @@ export const Text = compose(
   withType,
 )(Spectacle.List);
 
+export const Link = compose(
+  defaultProps({
+    lh: 'copy',
+    textColor: 'secondary',
+    textAlign: 'left',
+    fw: 5,
+  }),
+  withType,
+)(Spectacle.Link);
+
 export const List = styled(Spectacle.List)`
   list-style: none;
 

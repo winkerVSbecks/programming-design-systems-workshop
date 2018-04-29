@@ -3,7 +3,6 @@ import {
   SlideSet,
   Slide,
   Image,
-  Link,
   CodePane,
   Appear,
   BlockQuote,
@@ -11,7 +10,7 @@ import {
   Cite,
 } from 'spectacle';
 
-import { Heading, Text, List, ListItem, Emoji } from 'components';
+import { Heading, Text, List, ListItem, Emoji, Link } from 'components';
 import images from 'images';
 
 export const introSlides = (
@@ -25,15 +24,12 @@ export const introSlides = (
     <Slide>
       <Heading f={1}>Slides</Heading>
       <Text margin="4rem 0 0 0" textSize="2.25rem">
-        <Link href="https://tiny.cc/animation-math" textColor="secondary">
+        <Link href="https://tiny.cc/animation-math">
           tiny.cc/programming-design-systems
         </Link>
       </Text>
       <Text margin="4rem 0 0 0" textSize="2.25rem">
-        <Link
-          href="https://github.com/winkerVSbecks/programming-design-systems-workshop"
-          textColor="secondary"
-        >
+        <Link href="https://github.com/winkerVSbecks/programming-design-systems-workshop">
           github.com/winkerVSbecks/programming-design-systems-workshop
         </Link>
       </Text>
@@ -81,8 +77,8 @@ export const introSlides = (
       </Text>
     </Slide>
     <Slide>
-      <Heading f={1} margin="0 0 4rem 0">
-        CSS Based Design System
+      <Heading f={2} margin="0 0 4rem 0">
+        CSS Class Names Based Design System
       </Heading>
       <CodePane
         textSize="1.75rem"
@@ -100,13 +96,32 @@ export const introSlides = (
       />
     </Slide>
     <Slide>
+      <Heading f={2} margin="0 0 4rem 0">
+        CSS Class Names Based Design System
+      </Heading>
+      <CodePane
+        textSize="1.5rem"
+        lang="html"
+        source={`<div class="Card">
+  <h2 class="Card__Header">Hello</h2>
+
+  <div class="Card__Body">Lorem ipsum dolor sit amet</div>
+
+  <div>
+    <button class="Card__Action--primary">Yes</button>
+    <button class="Card__Action--secondary">No</button>
+  </div>
+</div>`}
+      />
+    </Slide>
+    <Slide>
       <Heading f={1}>
         <Emoji v="🚨🚨" /> Strong Opinions Ahead <Emoji v="🚨🚨" />
       </Heading>
     </Slide>
     <Slide>
-      <Heading>
-        CSS Is A Bad API<br />For Design Systems
+      <Heading f={1}>
+        CSS Is A Problematic API<br />For Design Systems
       </Heading>
     </Slide>
     <Slide margin={0.25}>
@@ -146,17 +161,14 @@ export const introSlides = (
           margin="0 0 4rem 0"
           style={{
             lineHeight: 1.5,
-            borderLeft: '4px solid #fff',
+            borderLeft: '8px solid #fff',
           }}
         >
           You have access to a more powerful styling construct than CSS class
           names.<br />You have components!
         </Quote>
         <Cite>
-          <Link
-            textColor="secondary"
-            href="https://medium.learnreact.com/scale-fud-and-style-components-c0ce87ec9772"
-          >
+          <Link href="https://medium.learnreact.com/scale-fud-and-style-components-c0ce87ec9772">
             Michael Chan
           </Link>
         </Cite>
@@ -169,6 +181,44 @@ export const introSlides = (
       <Text>
         Don't make your <i>users</i> write CSS. Let them compose components.
       </Text>
+    </Slide>
+    <Slide>
+      <Heading f={1}>Component Based Design System</Heading>
+      <List marker="+ ">
+        <ListItem>
+          <Link href="https://cloudflare.github.io/cf-ui/#cf-component-modal">
+            Cloudflare cf-ui
+          </Link>
+          <ListItem>
+            <Link href="https://react.lightningdesignsystem.com">
+              Salesforce Lightning Design System
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://github.com/carbon-design-system/carbon-components-react">
+              IBM Carbon
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://pinterest.github.io/gestalt/#/">
+              Pinterest Gestalt
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://polaris.shopify.com/components/get-started">
+              Shopify Polaris
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="http://jxnblk.com/rebass/components">Rebass</Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://material.io/components/web">
+              Google Material for Web
+            </Link>
+          </ListItem>
+        </ListItem>
+      </List>
     </Slide>
   </SlideSet>
 );
