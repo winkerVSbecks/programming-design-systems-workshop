@@ -247,6 +247,10 @@ const ProfileCard = props => (
 
 ---
 
+# CSS-in-JS Based Approach
+
+---
+
 # styled-system
 
 Design system utilities for styled-components and other css-in-js libraries
