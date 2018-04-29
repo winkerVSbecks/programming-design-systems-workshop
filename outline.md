@@ -297,9 +297,11 @@ const App = props => <ThemeProvider theme={theme}>{/* ... */}</ThemeProvider>;
 
 # Styled System Theme
 
+theme.json
+
 ---
 
-# styled-system first component
+# Styled System First Component
 
 * Heading
 * Text
@@ -308,23 +310,93 @@ const App = props => <ThemeProvider theme={theme}>{/* ... */}</ThemeProvider>;
 
 ---
 
+# Styled System Box
+
+```js
+// Example of a general purpose Box layout component
+export const Box = styled.div`
+  ${space}
+  ${color}
+  ${width}
+  ${fontSize}
+`;
+```
+
+---
+
+# System Components
+
+```
+                     +--+
+                     | clean-tag, clean-element, etc.
+system-components ---+ styled-system
+                     | styled-components
+                     +--+
+```
+
+---
+
+# System Component Box
+
+```js
+const Box = system('space', 'width', 'color', 'fontSize');
+```
+
+---
+
+# Side By Side Of
+
+* styled component
+* styled-system
+* system-components
+
+---
+
+# Styled System Text
+
+```js
+export const Text = system(
+  'space',
+  'color',
+  'fontSize',
+  'fontWeight',
+  'textAlign',
+  'lineHeight',
+);
+```
+
+---
+
+# Styled System Text
+
+```js
+export const Text = system(
+  'space',
+  'color',
+  'fontSize',
+  'fontWeight',
+  'textAlign',
+  'lineHeight',
+);
+```
+
+---
+
+# Styled System Absolute
+
+```js
+export const Absolute = system(
+  'space',
+  'color',
+  'width',
+  'fontSize',
+  'position',
+);
+```
+
+---
+
 # Composing (Aldo card)
-
----
-
-# Composing variations
-
----
-
-Slicing components exercise (group)
-
----
-
-Slicing components exercise (small groups)
-
----
-
-# Macro Components
 
 ---
 
@@ -352,15 +424,19 @@ const ImageCard = ({ tl, tr, br, bl, img, title, ratio, ...props }) => (
 
 ---
 
-# system-components
+# Composing variations
 
-```
-                     +--+
-                     |  styled-system
-system-components ---+  styled-component
-                     |  CSS
-                     +--+
-```
+---
+
+Slicing components exercise (group)
+
+---
+
+Slicing components exercise (small groups)
+
+---
+
+# Macro Components
 
 ---
 
@@ -368,10 +444,10 @@ system-components ---+  styled-component
 
 ```
           +--+
-          |  JSX
-Rebass ---+  styled-system
-          |  styled-component
-          |  CSS
+          |  React
+Rebass ---+  clean-tag
+          |  styled-system
+          |  styled-components
           +--+
 ```
 
@@ -379,7 +455,20 @@ Rebass ---+  styled-system
 
 ## attributes
 
+---
+
 ## Extending!
+
+```js
+import styled from 'styled-components';
+import { Button } from 'rebass';
+
+const CustomButton = styled(Button)`
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.125));
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+`;
+```
 
 ---
 
@@ -387,24 +476,3 @@ Rebass ---+  styled-system
 
 * Vue https://github.com/c8r/vue-styled-system
 * Angular 🤷🏽‍♂️
-
----
-
-* Design System Variables
-
-  * Tachyons design system
-  * styled-system `theme.json`
-  * [GitHub - tachyons-css/tachyons-system](https://github.com/tachyons-css/tachyons-system)
-
-* System Components
-
-  * Component slicing exercise
-  * Build heading, card, image & text components
-  * with Tachyons
-  * styled-components intro
-  * tachyons button ➡️ styled-components
-  * with system-components
-
-* Macro Components
-
-* Extending/Exceptions
