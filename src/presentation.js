@@ -5,7 +5,7 @@ import 'prismjs/components/prism-css';
 
 import createTheme from 'spectacle/lib/themes/default';
 import { colours, fontFamilies } from 'theme';
-import { introSlides, outroSlides } from './slides';
+import { introSlides, tachyonsSlides, outroSlides } from './slides';
 
 const theme = createTheme(colours, fontFamilies);
 
@@ -19,6 +19,7 @@ export default class Presentation extends React.Component {
         theme={theme}
       >
         {introSlides}
+        {tachyonsSlides}
         {outroSlides}
       </Deck>
     );

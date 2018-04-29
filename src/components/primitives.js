@@ -23,7 +23,7 @@ export const Text = compose(
     fw: 5,
   }),
   withType,
-)(Spectacle.List);
+)(Spectacle.Text);
 
 export const Link = compose(
   defaultProps({

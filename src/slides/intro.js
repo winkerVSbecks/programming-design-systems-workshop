@@ -125,7 +125,7 @@ export const introSlides = (
       </Heading>
     </Slide>
     <Slide margin={0.25}>
-      <Text f={2}>
+      <Text f={2} margin="0 0 2rem">
         <Emoji v="😕" /> "Why is this here?"
       </Text>
       <Text f={2}>
@@ -140,7 +140,12 @@ export const introSlides = (
     >
       <Appear>
         <div>
-          <Text f={2} bgColor="primary" padding="2rem 1.5rem">
+          <Text
+            f={2}
+            bgColor="primary"
+            padding="2rem 1.5rem"
+            margin="0 0 2rem 0"
+          >
             <Emoji v="🤷🏽‍" /> Have to write CSS to prototype new UI
           </Text>
         </div>
@@ -184,39 +189,43 @@ export const introSlides = (
     </Slide>
     <Slide>
       <Heading f={1}>Component Based Design System</Heading>
+      <Image src={images.figma} />
+    </Slide>
+    <Slide>
+      <Heading f={1}>Component Based Design System</Heading>
       <List marker="+ ">
         <ListItem>
           <Link href="https://cloudflare.github.io/cf-ui/#cf-component-modal">
             Cloudflare cf-ui
           </Link>
-          <ListItem>
-            <Link href="https://react.lightningdesignsystem.com">
-              Salesforce Lightning Design System
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://github.com/carbon-design-system/carbon-components-react">
-              IBM Carbon
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://pinterest.github.io/gestalt/#/">
-              Pinterest Gestalt
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://polaris.shopify.com/components/get-started">
-              Shopify Polaris
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="http://jxnblk.com/rebass/components">Rebass</Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://material.io/components/web">
-              Google Material for Web
-            </Link>
-          </ListItem>
+        </ListItem>
+        <ListItem>
+          <Link href="https://react.lightningdesignsystem.com">
+            Salesforce Lightning Design System
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://github.com/carbon-design-system/carbon-components-react">
+            IBM Carbon
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://pinterest.github.io/gestalt/#/">
+            Pinterest Gestalt
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://polaris.shopify.com/components/get-started">
+            Shopify Polaris
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="http://jxnblk.com/rebass/components">Rebass</Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://material.io/components/web">
+            Google Material for Web
+          </Link>
         </ListItem>
       </List>
     </Slide>

@@ -1,2 +1,3 @@
-export { introSlides } from './intro';
-export { outroSlides } from './outro';
+export * from './intro';
+export * from './tachyons';
+export * from './outro';
