@@ -240,22 +240,25 @@ CSS
 
 # Styled Components
 
+<!-- bg #D9926E -->
+
 ```js
 const Button = styled.a`
   display: inline-block;
+  line-height: 2;
   border-radius: 3px;
   padding: 0.5rem 0;
   margin: 0.5rem 1rem;
-  width: 11rem;
-  background: transparent;
-  color: white;
-  border: 2px solid white;
+  width: 12rem;
+  background: papayawhip;
+  color: #061329;
+  font-weight: bold;
 
   ${props =>
-    props.primary &&
+    props.inverted &&
     css`
-      background: white;
-      color: palevioletred;
+      background-color: #061329;
+      color: papayawhip;
     `};
 `;
 ```
@@ -280,7 +283,7 @@ const Box = styled.div`
 
 ---
 
-# Styled System setup
+# Styled System Setup
 
 ```js
 import React from 'react';
