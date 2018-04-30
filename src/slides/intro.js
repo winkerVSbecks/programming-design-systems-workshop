@@ -10,15 +10,7 @@ import {
   Cite,
 } from 'spectacle';
 
-import {
-  Heading,
-  Text,
-  List,
-  ListItem,
-  Emoji,
-  Link,
-  Codepen,
-} from 'components';
+import { Heading, Text, List, ListItem, Emoji, Link } from 'components';
 import images from 'images';
 
 export const introSlides = (
