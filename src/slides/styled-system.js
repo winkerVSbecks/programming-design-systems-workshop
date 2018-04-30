@@ -230,5 +230,15 @@ export const styledSystemSlides = (
         />
       </div>
     </Slide>
+    <Slide>
+      <Heading />
+      <Text>
+        <Link href="http://jxnblk.com/rebass/components" textColor="green">
+          rebass/components
+        </Link>{' '}
+        is a great example of the type of components you should build & good
+        APIs for design system components.
+      </Text>
+    </Slide>
   </SlideSet>
 );
