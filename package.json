@@ -10,7 +10,8 @@
     "recompose": "^0.26.0",
     "spectacle-code-slide": "^0.5.2",
     "spectacle-scripts": "2.0.0",
-    "tachyons": "^4.9.1"
+    "tachyons": "^4.9.1",
+    "tachyons-components": "^1.0.0-1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,6 +1,7 @@
 import React from 'react';
-import { SlideSet, Slide } from 'spectacle';
+import { SlideSet, Slide, Image } from 'spectacle';
 import classNames from 'classnames';
+import styled from 'tachyons-components';
 
 import {
   Emoji,
@@ -25,9 +26,10 @@ export const tachyonsSlides = (
         bgColor="secondary"
         padding="2rem"
         margin="0"
-        lh="solid"
+        lh="copy"
+        f={1}
       >
-        Tachyons
+        Building A<br />Component Based Design System<br />With Tachyons
       </Heading>
     </Slide>
     <Slide bgColor="secondary" margin={0.1}>
@@ -48,18 +50,49 @@ export const tachyonsSlides = (
       </div>
     </Slide>
     <Slide>
-      <Heading f={1}>Tachyons Design Constraints</Heading>
+      <Text margin="0 0 4rem 0">
+        Customize with<br />
+        <Link
+          target="_blank"
+          textColor="gold"
+          href="https://github.com/tachyons-css/generator"
+        >
+          tachyons-css/generator
+        </Link>
+      </Text>
+      <Text>
+        Extend with<br />
+        <Link
+          target="_blank"
+          textColor="green"
+          href="https://tachyons-tldr.now.sh/#/tools"
+        >
+          tachyons-tldr.now.sh/#/tools
+        </Link>
+      </Text>
+    </Slide>
+    <Slide>
+      <Heading f={1}>Tachyons Design Constraints API</Heading>
       <List>
         <ListItem>
-          Typographic Scale <Inline green>h1 – h6</Inline>
+          Typographic Scale <Inline green>.f1 – .f7</Inline>
         </ListItem>
         <ListItem>
-          Spacing Scale <Inline gold>m0 – m4</Inline>
+          Spacing Scale <Inline gold>.ma0 – .ma7</Inline>
         </ListItem>
         <ListItem>
-          Composition <Inline blue>className="h2 mt4 mb2"</Inline>
+          Composition <Inline blue>className="f2 mt4 mb2"</Inline>
         </ListItem>
       </List>
+    </Slide>
+    <Slide>
+      <AsymmetricComponentPlayground
+        theme="dark"
+        code={codeSamples.tachyonsComponent}
+      />
+    </Slide>
+    <Slide>
+      <ImageCard src={images.formUi} width={800} />
     </Slide>
     <Slide>
       <Heading f={1} margin="0 0 4rem 0">
@@ -70,20 +103,19 @@ export const tachyonsSlides = (
         Props <Emoji v="➡️" /> className
       </Text>
     </Slide>
-    <Slide>
-      <AsymmetricComponentPlayground
-        theme="dark"
-        code={codeSamples.tachyonComponent}
-      />
-    </Slide>
-    <Slide>
-      <ImageCard src={images.formUi} width={800} />
-    </Slide>
-    <Slide>
+    <Slide
+      notes={`
+    Change the button colours to lightest-blue and navy
+    add classNames to make it b ttu and tracked
+    then decrease font size ✅
+    increase font size 🚫
+    add a  f prop
+    `}
+    >
       <AsymmetricComponentPlayground
         theme="dark"
         scope={{ classNames }}
-        code={codeSamples.tachyonClassNameComponent}
+        code={codeSamples.tachyonsClassNameComponent}
       />
     </Slide>
     <Slide>
@@ -101,7 +133,7 @@ export const tachyonsSlides = (
     </Slide>
     <Slide>
       <Heading f={1}>
-        <Emoji v="⚠️" /> Somewhat Experimental
+        Somewhat <Emoji v="⚠️" /> Experimental Tools
       </Heading>
       <List marker="+ ">
         <ListItem>
@@ -110,7 +142,8 @@ export const tachyonsSlides = (
             f={2}
             href="https://github.com/jxnblk/tachyons-components"
           >
-            tachyons-components
+            tachyons-components{' '}
+            <span className="f4">(probably the best option)</span>
           </Link>
         </ListItem>
         <ListItem>
@@ -135,12 +168,29 @@ export const tachyonsSlides = (
           <Link
             target="_blank"
             f={2}
-            href="https://github.com/tachyons-css/generator"
+            href="https://github.com/winkerVSbecks/tachyons-measured"
           >
-            tachyons-css/generator
-          </Link>
+            tachyons-measured
+          </Link>{' '}
+          <span className="f4">(not maintained, only for reference)</span>
         </ListItem>
       </List>
+    </Slide>
+    <Slide>
+      <Heading>
+        <Link
+          target="_blank"
+          f={3}
+          href="https://github.com/jxnblk/tachyons-components"
+        >
+          tachyons-components
+        </Link>
+      </Heading>
+      <AsymmetricComponentPlayground
+        theme="dark"
+        scope={{ styled }}
+        code={codeSamples.tachyonsComponentButton}
+      />
     </Slide>
   </SlideSet>
 );

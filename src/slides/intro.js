@@ -6,11 +6,10 @@ import {
   CodePane,
   Appear,
   BlockQuote,
-  Quote,
   Cite,
 } from 'spectacle';
 
-import { Heading, Text, List, ListItem, Emoji, Link } from 'components';
+import { Heading, Text, List, ListItem, Emoji, Link, Quote } from 'components';
 import images from 'images';
 
 export const introSlides = (
@@ -142,14 +141,6 @@ export const introSlides = (
           </Text>
         </div>
       </Appear>
-      <Appear>
-        <div>
-          <Text f={2} bgColor="primary" padding="2rem 1.5rem">
-            <Emoji v="😰" /> "If I modify this class will it break something
-            else?"
-          </Text>
-        </div>
-      </Appear>
     </Slide>
     <Slide>
       <BlockQuote>
@@ -182,7 +173,6 @@ export const introSlides = (
     </Slide>
     <Slide>
       <Heading f={1}>Component Based Design System</Heading>
-      <Image src={images.figma} />
     </Slide>
     <Slide bgColor="#eee">
       <Image src={images.marquee} width={512} />
@@ -196,6 +186,29 @@ export const introSlides = (
     </Slide>
     <Slide bgColor="#eee">
       <Image src={images.marqueeComponents} width={881} />
+    </Slide>
+    <Slide>
+      <Heading f={2} margin="0 0 4rem 0">
+        Component Based Architecture +<br />Design System
+      </Heading>
+      <Heading fw={8} f={3}>
+        System Components
+      </Heading>
+      <List margin="0 0 4rem 0">
+        <ListItem f={3}>Lowest-level building block</ListItem>
+        <ListItem f={3}>Encapsulate styles and contain no logic</ListItem>
+      </List>
+      <Heading fw={8} f={3}>
+        Macro Components
+      </Heading>
+      <List>
+        <ListItem f={3}>Composition of system-components</ListItem>
+        <ListItem f={3}>May contain some UI logic</ListItem>
+        <ListItem f={3}>Contain no application logic</ListItem>
+      </List>
+    </Slide>
+    <Slide>
+      <Image src={images.figma} />
     </Slide>
     <Slide
       bgSize="fit"
@@ -238,6 +251,20 @@ export const introSlides = (
           <Link href="https://material.io/components/web">
             Google Material for Web
           </Link>
+        </ListItem>
+      </List>
+    </Slide>
+    <Slide>
+      <Heading f={1}>Component Based Design System</Heading>
+      <List>
+        <ListItem f={2} margin="0 0 2rem 0">
+          Removes the mapping between components and styles
+        </ListItem>
+        <ListItem f={2} margin="0 0 2rem 0">
+          Components as a low-level styling construct
+        </ListItem>
+        <ListItem f={2} margin="0 0 2rem 0">
+          Designers can create a shared language with developers
         </ListItem>
       </List>
     </Slide>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideSet, Slide } from 'spectacle';
+import { SlideSet, Slide, BlockQuote, Cite } from 'spectacle';
 import classNames from 'classnames';
 
 import {
@@ -13,6 +13,7 @@ import {
   ImageCard,
   AsymmetricComponentPlayground,
   CodePane,
+  Quote,
 } from 'components';
 import images from 'images';
 import * as codeSamples from 'code-samples';
@@ -25,27 +26,25 @@ export const styledSystemSlides = (
         bgColor="secondary"
         padding="2rem"
         margin="0"
-        lh="solid"
+        lh="copy"
+        f={1}
       >
-        CSS-in-JS
+        Building A<br />Component Based Design System<br />With CSS-in-JS
       </Heading>
     </Slide>
-    <Slide bgColor="secondary" margin={0.1}>
-      <div className="flex items-center">
-        <ImageCard
-          src={images.tachyonsDesignSystem}
-          style={{ margin: '0 4rem 0 0' }}
-          width={650}
-        />
-        <Text>
-          <Link
-            textColor="primary"
-            href="https://tachyons-tldr.now.sh/#/scales"
-          >
-            Tachyons<br />Design<br />Constraints
+    <Slide>
+      <Heading f={1}>CSS-in-JS</Heading>
+      <BlockQuote>
+        <Quote>
+          A pattern where CSS is composed using JavaScript instead of defined in
+          external files.
+        </Quote>
+        <Cite>
+          <Link href="https://reactjs.org/docs/faq-styling.html#what-is-css-in-js">
+            reactjs.org/docs/faq-styling
           </Link>
-        </Text>
-      </div>
+        </Cite>
+      </BlockQuote>
     </Slide>
   </SlideSet>
 );

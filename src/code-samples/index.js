@@ -1,4 +1,4 @@
-export const tachyonComponent = `
+export const tachyonsComponent = `
 const Button = ({ className, ...props }) => {
 
   const cx =
@@ -8,9 +8,9 @@ const Button = ({ className, ...props }) => {
   return <button className={cx} {...props} />;
 };
 
-render(<Button>Save</Button>);`;
+render(<Button>Update</Button>);`;
 
-export const tachyonClassNameComponent = `
+export const tachyonsClassNameComponent = `
 const Button = ({
   color = 'white',
   bg = 'purple',
@@ -28,9 +28,9 @@ const Button = ({
 };
 
 render(
-  <div className="flex flex-column">
+  <div className="flex flex-wrap justify-center">
     <Button className="mb3">
-      Save
+      Update
     </Button>
 
     <Button bg="moon-gray" color="dark-gray">
@@ -73,3 +73,22 @@ export const curvedBlock = `<CurvedBlock w={100} bg="white" topLeft>
   {children}
 </CurvedBlock>
 `;
+
+export const tachyonsComponentButton = `
+// import styled from 'tachyons-components';
+
+const Button = styled('button')\`
+  bn f6 dim br2 pv3 ph4 white bg-purple
+\`;
+
+render(
+  <div className="flex flex-wrap justify-center">
+    <Button mb3>
+      Update
+    </Button>
+
+    <Button bg-moon-gray dark-gray>
+      Cancel
+    </Button>
+  </div>
+);`;

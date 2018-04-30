@@ -55,7 +55,7 @@ export const List = styled(Spectacle.List)`
   list-style: none;
 
   & li:before {
-    content: ${props => (props.marker ? `'${props.marker}'` : '"- "')};
+    content: ${props => (props.marker ? `'${props.marker}'` : '"— "')};
     font-weight: 500;
   }
 `;
@@ -106,3 +106,13 @@ export const AsymmetricComponentPlayground = ({ right, ...props }) => (
     <Spectacle.ComponentPlayground {...props} />
   </PlaygroundRatio>
 );
+
+export const Quote = defaultProps({
+  textColor: 'secondary',
+  textSize: '3rem',
+  margin: '0 0 4rem 0',
+  style: {
+    lineHeight: 1.5,
+    borderLeft: '8px solid #fff',
+  },
+})(Spectacle.Quote);
