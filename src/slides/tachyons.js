@@ -100,7 +100,7 @@ export const tachyonsSlides = (
       </Heading>
 
       <Text>
-        Props <Emoji v="➡️" /> className
+        Props <Emoji v="🔀" /> Design System <Emoji v="➡️" /> className
       </Text>
     </Slide>
     <Slide
@@ -129,7 +129,7 @@ export const tachyonsSlides = (
       <CodePane textSize="1.4rem" source={codeSamples.headingRender} />
     </Slide>
     <Slide>
-      <CodePane textSize="1.4rem" source={codeSamples.curvedBlock} />
+      <CodePane textSize="1.4rem" source={codeSamples.curvedBox} />
     </Slide>
     <Slide>
       <Heading f={1}>

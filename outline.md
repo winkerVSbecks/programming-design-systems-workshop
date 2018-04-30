@@ -142,20 +142,6 @@ Props ➡️ className
 ---
 
 ```js
-<Text bold fontSize={4}>
-  Hello 👋🏽
-</Text>
-```
-
----
-
-```js
-<Box m={2} p={3} color="white" bg="blue" />
-```
-
----
-
-```js
 <Heading
   level={2}
   f={5}
@@ -214,36 +200,6 @@ Props ➡️ className
 ---
 
 https://cloudflare.github.io/cf-ui/#cf-component-box
-
----
-
-```js
-const ProductCard = props => (
-  <Card width={256}>
-    <BackgroundImage src={props.image} />
-    <Box p={2}>
-      <Subhead>{props.title}</Subhead>
-      <Small>{props.text}</Small>
-    </Box>
-  </Card>
-);
-```
-
----
-
-![](tachyons-card.png)
-
-```js
-const ProfileCard = props => (
-  <Flex width={256} borderRadius={2}>
-    <Image w={3} h={3} borderRadius="100%" src={props.image} />
-    <Box p={2}>
-      <Subhead>{props.name}</Subhead>
-      <Small>{props.title}</Small>
-    </Box>
-  </Flex>
-);
-```
 
 ---
 
@@ -333,6 +289,53 @@ const App = props => <ThemeProvider theme={theme}>{/* ... */}</ThemeProvider>;
 # Styled System Theme
 
 theme.json
+
+---
+
+---
+
+
+```js
+<Text bold fontSize={4}>
+  Hello 👋🏽
+</Text>
+```
+
+---
+
+```js
+<Box m={2} p={3} color="white" bg="blue" />
+```
+
+---
+
+```js
+const ProductCard = props => (
+  <Card width={256}>
+    <BackgroundImage src={props.image} />
+    <Box p={2}>
+      <Subhead>{props.title}</Subhead>
+      <Small>{props.text}</Small>
+    </Box>
+  </Card>
+);
+```
+
+---
+
+![](tachyons-card.png)
+
+```js
+const ProfileCard = props => (
+  <Flex width={256} borderRadius={2}>
+    <Image w={3} h={3} borderRadius="100%" src={props.image} />
+    <Box p={2}>
+      <Subhead>{props.name}</Subhead>
+      <Small>{props.title}</Small>
+    </Box>
+  </Flex>
+);
+```
 
 ---
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { SlideSet, Slide, BlockQuote, Cite } from 'spectacle';
 import classNames from 'classnames';
+import styled, { css } from 'styled-components';
 
 import {
   Emoji,
@@ -45,6 +46,45 @@ export const styledSystemSlides = (
           </Link>
         </Cite>
       </BlockQuote>
+    </Slide>
+    <Slide>
+      <Heading f={1}>styled-system</Heading>
+
+      <Text f={2} margin="0 0 4rem 0">
+        Design system utilities for styled-components and other css-in-js
+        libraries
+      </Text>
+      <Text f={2}>
+        Props <Emoji v="🔀" /> Design System <Emoji v="➡️" /> CSS
+      </Text>
+    </Slide>
+    <Slide>
+      <div className="f3 pa3 bg-white black">JSX</div>
+      <div className="pv4">
+        <Emoji v="⬇️" />
+      </div>
+      <div className="f3 pa3 bg-white black">styled-system</div>
+      <div className="pv4">
+        <Emoji v="⬇️" />
+      </div>
+      <div className="f3 pa3 bg-white black lh-copy">
+        styled-component, emotion, glamor, glamorous, cxs, fela (supports
+        angular too), VueJS, etc.
+      </div>
+      <div className="pv4">
+        <Emoji v="⬇️" />
+      </div>
+      <div className="f3 pa3 bg-white black">CSS</div>
+    </Slide>
+    <Slide>
+      <Heading f={1}>Styled Components</Heading>
+      <AsymmetricComponentPlayground
+        theme="dark"
+        right={1.5}
+        previewBackgroundColor="#D9926E"
+        scope={{ styled, css }}
+        code={codeSamples.styledComponentsLink}
+      />
     </Slide>
   </SlideSet>
 );
