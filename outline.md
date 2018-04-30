@@ -306,36 +306,6 @@ theme.json
 
 ---
 
-```js
-const ProductCard = props => (
-  <Card width={256}>
-    <BackgroundImage src={props.image} />
-    <Box p={2}>
-      <Subhead>{props.title}</Subhead>
-      <Small>{props.text}</Small>
-    </Box>
-  </Card>
-);
-```
-
----
-
-![](tachyons-card.png)
-
-```js
-const ProfileCard = props => (
-  <Flex width={256} borderRadius={2}>
-    <Image w={3} h={3} borderRadius="100%" src={props.image} />
-    <Box p={2}>
-      <Subhead>{props.name}</Subhead>
-      <Small>{props.title}</Small>
-    </Box>
-  </Flex>
-);
-```
-
----
-
 # Styled System First Component
 
 * Heading
@@ -418,6 +388,40 @@ export const Text = system(
 
 ---
 
+```js
+const ProductCard = props => (
+  <Card width={256}>
+    <BackgroundImage src={props.image} />
+    <Box p={2}>
+      <Subhead>{props.title}</Subhead>
+      <Small>{props.text}</Small>
+    </Box>
+  </Card>
+);
+```
+
+---
+
+![](tachyons-card.png)
+
+```js
+const ProfileCard = props => (
+  <Flex width={256} borderRadius={2}>
+    <Image w={3} h={3} borderRadius="100%" src={props.image} />
+    <Box p={2}>
+      <Subhead>{props.name}</Subhead>
+      <Small>{props.title}</Small>
+    </Box>
+  </Flex>
+);
+```
+
+---
+
+# Composing (Aldo card)
+
+---
+
 # Styled System Absolute
 
 ```js
@@ -429,10 +433,6 @@ export const Absolute = system(
   'position',
 );
 ```
-
----
-
-# Composing (Aldo card)
 
 ---
 
