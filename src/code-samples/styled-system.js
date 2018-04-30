@@ -24,3 +24,19 @@ render(
     <Link inverted>GitHub</Link>
   </div>
 )`;
+
+export const systemBox = `
+const Box = styled.div\`
+  \${styledSystem.space}
+  \${styledSystem.width}
+  \${styledSystem.fontSize}
+  \${styledSystem.color}
+  \${styledSystem.flex}
+  \${styledSystem.alignSelf}
+\`;
+
+render(
+  <Box bg="white" p={3} color="palevioletred">
+    This is a Box
+  </Box>
+);`;

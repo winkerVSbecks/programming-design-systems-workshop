@@ -2,6 +2,7 @@ import React from 'react';
 import { SlideSet, Slide, BlockQuote, Cite } from 'spectacle';
 import classNames from 'classnames';
 import styled, { css } from 'styled-components';
+import * as styledSystem from 'styled-system';
 
 import {
   Emoji,
@@ -18,6 +19,8 @@ import {
 } from 'components';
 import images from 'images';
 import * as codeSamples from 'code-samples';
+
+const gradient = 'linear-gradient(20deg, #db7093, #daa357)';
 
 export const styledSystemSlides = (
   <SlideSet>
@@ -81,9 +84,19 @@ export const styledSystemSlides = (
       <AsymmetricComponentPlayground
         theme="dark"
         right={1.5}
-        previewBackgroundColor="#D9926E"
+        previewBackgroundColor={gradient}
         scope={{ styled, css }}
         code={codeSamples.styledComponentsLink}
+      />
+    </Slide>
+    <Slide>
+      <Heading f={1}>Styled System</Heading>
+      <AsymmetricComponentPlayground
+        theme="dark"
+        right={1.5}
+        previewBackgroundColor={gradient}
+        scope={{ styled, styledSystem }}
+        code={codeSamples.systemBox}
       />
     </Slide>
   </SlideSet>
