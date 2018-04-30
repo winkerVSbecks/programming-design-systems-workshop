@@ -3,6 +3,7 @@ import { SlideSet, Slide, BlockQuote, Cite } from 'spectacle';
 import classNames from 'classnames';
 import styled, { css } from 'styled-components';
 import * as styledSystem from 'styled-system';
+import CodeSlide from 'spectacle-code-slide';
 
 import {
   Emoji,
@@ -90,7 +91,19 @@ export const styledSystemSlides = (
       />
     </Slide>
     <Slide>
-      <Heading f={1}>Styled System</Heading>
+      <Heading f={1}>
+        Styled System{' '}
+        <Link
+          f={3}
+          target="_blank"
+          textColor="blue"
+          lh="solid"
+          href="https://github.com/jxnblk/styled-system#api"
+          className="inline-flex items-center"
+        >
+          API <img src="https://icon.now.sh/exit_to_app/20/2175FF" />
+        </Link>
+      </Heading>
       <AsymmetricComponentPlayground
         theme="dark"
         right={1.5}
@@ -99,5 +112,46 @@ export const styledSystemSlides = (
         code={codeSamples.systemBox}
       />
     </Slide>
+    <CodeSlide
+      transition={[]}
+      lang="js"
+      textSize="1.75rem"
+      code={codeSamples.theme}
+      ranges={[
+        { loc: [0, 270], title: 'Design Constraints' },
+        { loc: [0, 1], note: 'theme.js' },
+        { loc: [1, 4], note: 'breakpoints' },
+        {
+          loc: [5, 16],
+          note: (
+            <div>
+              colours
+              <p>
+                nested objects work as well<br />
+                arrays can be used for scales of colors
+              </p>
+            </div>
+          ),
+        },
+        {
+          loc: [14, 17],
+          note: (
+            <div>
+              <p>space is used for margin and padding scales.</p>
+              <p>
+                It's recommended to use powers of two to ensure alignment when
+                used in nested elements.
+              </p>
+              <p>Numbers are converted to px</p>
+            </div>
+          ),
+        },
+        { loc: [17, 36], note: 'typographic scales' },
+        { loc: [36, 40], note: 'border styles' },
+        { loc: [43, 47], note: 'miscellaneous' },
+        { loc: [50, 66], note: 'Your Design System Constraints' },
+        { loc: [67, 78], note: 'Apply the theme' },
+      ]}
+    />
   </SlideSet>
 );
