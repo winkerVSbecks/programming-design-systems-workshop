@@ -292,9 +292,6 @@ theme.json
 
 ---
 
----
-
-
 ```js
 <Text bold fontSize={4}>
   Hello 👋🏽
@@ -411,6 +408,7 @@ export const Text = system(
 export const Text = system(
   'space',
   'color',
+  'width',
   'fontSize',
   'fontWeight',
   'textAlign',

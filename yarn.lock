@@ -1524,6 +1524,14 @@ clean-css@4.1.x:
   dependencies:
     source-map "0.5.x"
 
+clean-tag@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/clean-tag/-/clean-tag-1.0.4.tgz#9b407b306fadce114e6dffa774e7b61bdfc0c190"
+  dependencies:
+    html-tags "^2.0.0"
+    react ">=16.0.0"
+    styled-system ">=1.1 || >=2.0"
+
 cli-boxes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-1.0.0.tgz#4fa917c3e59c94a004cd61f8ee509da651687143"
@@ -3522,6 +3530,10 @@ html-minifier@^3.2.3:
     param-case "2.1.x"
     relateurl "0.2.x"
     uglify-js "3.3.x"
+
+html-tags@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-2.0.0.tgz#10b30a386085f43cede353cc8fa7cb0deeea668b"
 
 html-webpack-plugin@2.29.0:
   version "2.29.0"
@@ -5976,6 +5988,15 @@ react-typography@^0.16.5:
   version "0.16.13"
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.13.tgz#94bdd2a9448823bc74d8ebf7465d86c7dbe20dcf"
 
+react@>=16.0.0:
+  version "16.3.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.3.2.tgz#fdc8420398533a1e58872f59091b272ce2f91ea9"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+
 react@^16.3.1:
   version "16.3.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.3.1.tgz#4a2da433d471251c69b6033ada30e2ed1202cfd8"
@@ -6915,7 +6936,7 @@ style-loader@0.19.0:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
 
-styled-components@^3.2.6:
+styled-components@>=3.0.0, styled-components@^3.2.6:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-3.2.6.tgz#99e6e75a746bdedd295a17e03dd1493055a1cc3b"
   dependencies:
@@ -6930,7 +6951,7 @@ styled-components@^3.2.6:
     stylis-rule-sheet "^0.0.10"
     supports-color "^3.2.3"
 
-styled-system@^2.2.4:
+"styled-system@>=1.1 || >=2.0", styled-system@>=2.0.1, styled-system@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-2.2.4.tgz#9dbdca131c9ad75364dc8917e1df0eb0b92eb38e"
   dependencies:
@@ -7019,6 +7040,14 @@ symbol-observable@^1.0.3, symbol-observable@^1.0.4:
 symbol-tree@^3.2.1:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
+
+system-components@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/system-components/-/system-components-2.0.3.tgz#39fa5051c7f276f6b7b0ea990e5fdaef98949343"
+  dependencies:
+    clean-tag "^1.0.3"
+    styled-components ">=3.0.0"
+    styled-system ">=2.0.1"
 
 table@^4.0.1:
   version "4.0.3"

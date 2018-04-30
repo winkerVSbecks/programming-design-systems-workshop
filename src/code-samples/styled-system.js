@@ -25,14 +25,14 @@ render(
   </div>
 )`;
 
-export const systemBox = `
+export const styledSystemBox = `
 const Box = styled.div\`
-  \${styledSystem.space}
-  \${styledSystem.width}
-  \${styledSystem.fontSize}
-  \${styledSystem.color}
-  \${styledSystem.flex}
-  \${styledSystem.alignSelf}
+  \${space}
+  \${width}
+  \${fontSize}
+  \${color}
+  \${flex}
+  \${alignSelf}
 \`;
 
 render(
@@ -124,3 +124,70 @@ const App = props => (
 
 
 `;
+
+export const systemComponentBox = `
+const Box = system(
+  'space',
+  'width',
+  'fontSize',
+  'color',
+  'flex',
+  'alignSelf',
+);
+
+render(
+  <Box bg="white" p={3} color="palevioletred">
+    This is a Box
+  </Box>
+);`;
+
+export const systemComponentCore = `
+const Box = system(
+  'space',
+  'width',
+  'fontSize',
+  'color',
+  'flex',
+  'alignSelf',
+);
+
+const Text = system(
+  {
+    is: 'p',
+    fontSize: 2,
+    color: 'black',
+  },
+  'space',
+  'color',
+  'width',
+  'fontSize',
+  'fontWeight',
+  'textAlign',
+  'lineHeight',
+);
+
+const Heading = system(
+  {
+    is: 'h1',
+    m: 0,
+    fontSize: 6,
+    color: 'black',
+  },
+  'space',
+  'color',
+  'width',
+  'fontSize',
+  'fontWeight',
+  'textAlign',
+  'lineHeight',
+);
+
+render(
+  <Box p={3}>
+    <Heading mb={4}>Title</Heading>
+
+    <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
+
+    <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
+  </Box>
+);`;

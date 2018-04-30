@@ -1,9 +1,10 @@
 import React from 'react';
 import { SlideSet, Slide, BlockQuote, Cite } from 'spectacle';
 import classNames from 'classnames';
+import styledSystem from 'styled-system';
 import styled, { css } from 'styled-components';
-import * as styledSystem from 'styled-system';
 import CodeSlide from 'spectacle-code-slide';
+import system from 'system-components';
 
 import {
   Emoji,
@@ -108,8 +109,8 @@ export const styledSystemSlides = (
         theme="dark"
         right={1.5}
         previewBackgroundColor={gradient}
-        scope={{ styled, styledSystem }}
-        code={codeSamples.systemBox}
+        scope={{ styled, ...styledSystem }}
+        code={codeSamples.styledSystemBox}
       />
     </Slide>
     <CodeSlide
@@ -153,5 +154,69 @@ export const styledSystemSlides = (
         { loc: [67, 78], note: 'Apply the theme' },
       ]}
     />
+    <Slide>
+      <div className="flex items-center">
+        <div>system-components</div>
+        <div className="flex-auto self-stretch br bw3 mr3" />
+        <div>
+          <div className="f3 pa3 bg-white black mb3">
+            clean-tag, clean-element, etc.
+          </div>
+          <div className="f3 pa3 bg-white black mb3">styled-system</div>
+          <div className="f3 pa3 bg-white black">styled-components</div>
+        </div>
+      </div>
+    </Slide>
+    <Slide>
+      <Heading f={1}>
+        Styled Components{' '}
+        <Link
+          f={3}
+          target="_blank"
+          textColor="blue"
+          lh="solid"
+          href="https://github.com/jxnblk/styled-system#system-components"
+          className="inline-flex items-center"
+        >
+          API <img src="https://icon.now.sh/exit_to_app/20/2175FF" />
+        </Link>
+      </Heading>
+      <AsymmetricComponentPlayground
+        theme="dark"
+        right={1.5}
+        previewBackgroundColor={gradient}
+        scope={{ styled, system }}
+        code={codeSamples.systemComponentBox}
+      />
+    </Slide>
+    <Slide>
+      <Heading f={1} margin="0 0 4rem 0">
+        Styled System Ecosystem
+      </Heading>
+      <List>
+        <ListItem f={2} margin="0 0 3rem 0">
+          <Inline blue>system-components</Inline> simpler authoring experience
+          when using styled-system
+        </ListItem>
+        <ListItem f={2} margin="0 0 3rem 0">
+          <Inline green>styled-system</Inline> design system utilities to build
+          design system components
+        </ListItem>
+        <ListItem f={2} margin="0 0 3rem 0">
+          <Inline pink>styled-components</Inline> css-in-js library
+        </ListItem>
+      </List>
+    </Slide>
+    <Slide>
+      <div>
+        <AsymmetricComponentPlayground
+          theme="dark"
+          right={1.5}
+          align="left"
+          scope={{ styled, system }}
+          code={codeSamples.systemComponentCore}
+        />
+      </div>
+    </Slide>
   </SlideSet>
 );

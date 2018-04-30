@@ -90,6 +90,7 @@ export const PlaygroundRatio = styled('div')`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: ${({ align }) => (align ? align : 'inherit')};
   }
 
   .react-live > div > div:nth-child(2) {
@@ -97,12 +98,12 @@ export const PlaygroundRatio = styled('div')`
   }
 
   .react-live pre {
-    padding: 1rem 2rem;
+    padding: 1rem 0 1rem 2rem;
   }
 `;
 
-export const AsymmetricComponentPlayground = ({ right, ...props }) => (
-  <PlaygroundRatio right={right}>
+export const AsymmetricComponentPlayground = ({ align, right, ...props }) => (
+  <PlaygroundRatio right={right} align={align}>
     <Spectacle.ComponentPlayground {...props} />
   </PlaygroundRatio>
 );
