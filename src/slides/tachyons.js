@@ -87,7 +87,7 @@ export const tachyonsSlides = (
       />
     </Slide>
     <Slide>
-      <Text f={3}>Component</Text>
+      <Text f={3}>Component With Design System As Props</Text>
       <CodePane
         margin="0 0 2rem 0"
         textSize="1.4rem"
@@ -101,16 +101,21 @@ export const tachyonsSlides = (
     </Slide>
     <Slide>
       <Heading f={1}>
-        <Emoji v="⚠️" /> Experimental
+        <Emoji v="⚠️" /> Somewhat Experimental
       </Heading>
       <List marker="+ ">
         <ListItem>
-          <Link f={2} href="https://github.com/jxnblk/tachyons-components">
+          <Link
+            target="_blank"
+            f={2}
+            href="https://github.com/jxnblk/tachyons-components"
+          >
             tachyons-components
           </Link>
         </ListItem>
         <ListItem>
           <Link
+            target="_blank"
             f={2}
             href="https://github.com/jamesmcallister/styled-components-tachyons"
           >
@@ -119,6 +124,7 @@ export const tachyonsSlides = (
         </ListItem>
         <ListItem>
           <Link
+            target="_blank"
             f={2}
             href="https://github.com/rangle/rubbr-installer/tree/master/src/styles/with-style-props/with-style-props.hoc.js"
           >
@@ -126,7 +132,11 @@ export const tachyonsSlides = (
           </Link>
         </ListItem>
         <ListItem>
-          <Link f={2} href="https://github.com/tachyons-css/generator">
+          <Link
+            target="_blank"
+            f={2}
+            href="https://github.com/tachyons-css/generator"
+          >
             tachyons-css/generator
           </Link>
         </ListItem>
