@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const CodePen = ({
+export const Codepen = ({
   name,
-  user,
+  user = 'winkerVSbecks',
   id,
   height = 400,
   themeId = '29126',
   bgColor = '#fff',
   color = '#000',
   author = null,
-  showAttr = true,
+  showAttr = false,
   ...props
 }) => (
   <div style={{ backgroundColor: bgColor }} {...props}>
@@ -23,6 +23,7 @@ export const CodePen = ({
       allowtransparency="true"
       allowFullScreen="true"
       style={{
+        display: 'block',
         width: '100%',
         border: 'none',
         backgroundColor: bgColor,
@@ -49,7 +50,7 @@ export const CodePen = ({
   </div>
 );
 
-CodePen.propTypes = {
+Codepen.propTypes = {
   name: PropTypes.string,
   user: PropTypes.string,
   id: PropTypes.string,

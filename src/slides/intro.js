@@ -10,7 +10,15 @@ import {
   Cite,
 } from 'spectacle';
 
-import { Heading, Text, List, ListItem, Emoji, Link } from 'components';
+import {
+  Heading,
+  Text,
+  List,
+  ListItem,
+  Emoji,
+  Link,
+  Codepen,
+} from 'components';
 import images from 'images';
 
 export const introSlides = (
@@ -114,24 +122,6 @@ export const introSlides = (
 </div>`}
       />
     </Slide>
-    <Slide>
-      <Heading f={1}>
-        <Emoji v="🚨🚨" /> Strong Opinions Ahead <Emoji v="🚨🚨" />
-      </Heading>
-    </Slide>
-    <Slide>
-      <Heading f={1}>
-        CSS Is A Problematic API<br />For Design Systems
-      </Heading>
-    </Slide>
-    <Slide margin={0.25}>
-      <Text f={2} margin="0 0 2rem">
-        <Emoji v="😕" /> "Why is this here?"
-      </Text>
-      <Text f={2}>
-        <Emoji v="😰" /> "Will this change break something else?"
-      </Text>
-    </Slide>
     <Slide
       bgColor="secondary"
       bgImage={images.cssWorkflow}
@@ -139,21 +129,32 @@ export const introSlides = (
       bgRepeat="no-repeat"
     >
       <Appear>
-        <div>
-          <Text
-            f={2}
-            bgColor="primary"
-            padding="2rem 1.5rem"
-            margin="0 0 2rem 0"
-          >
+        <div className="mb4">
+          <Text f={2} bgColor="primary" padding="2rem 1.5rem">
             <Emoji v="🤷🏽‍" /> Have to write CSS to prototype new UI
+          </Text>
+        </div>
+      </Appear>
+      <Appear>
+        <div className="mb4">
+          <Text f={2} bgColor="primary" padding="2rem 1.5rem">
+            <Emoji v="🔁" /> Have to keep two abstractions in sync
           </Text>
         </div>
       </Appear>
       <Appear>
         <div>
           <Text f={2} bgColor="primary" padding="2rem 1.5rem">
-            <Emoji v="🔁" /> Have to keep two abstractions in sync
+            <Emoji v="😰" /> "If I modify this class will it break something
+            else?"
+          </Text>
+        </div>
+      </Appear>
+      <Appear>
+        <div>
+          <Text f={2} bgColor="primary" padding="2rem 1.5rem">
+            <Emoji v="😰" /> "If I modify this class will it break something
+            else?"
           </Text>
         </div>
       </Appear>
@@ -180,7 +181,7 @@ export const introSlides = (
       </BlockQuote>
     </Slide>
     <Slide>
-      <Text>
+      <Text margin="0 0 4rem">
         You are the design system author. Your users are other developers.
       </Text>
       <Text>
@@ -191,6 +192,25 @@ export const introSlides = (
       <Heading f={1}>Component Based Design System</Heading>
       <Image src={images.figma} />
     </Slide>
+    <Slide bgColor="#eee">
+      <Image src={images.marquee} width={512} />
+    </Slide>
+    <Slide bgColor="#eee">
+      <Image
+        src={images.marqueeDebug}
+        width={512}
+        style={{ outline: '1px solid #ffb700' }}
+      />
+    </Slide>
+    <Slide bgColor="#eee">
+      <Image src={images.marqueeComponents} width={881} />
+    </Slide>
+    <Slide
+      bgSize="fit"
+      bgRepeat="no-repeat"
+      bgColor="white"
+      bgImage={images.tachyonsWorkflow}
+    />
     <Slide>
       <Heading f={1}>Component Based Design System</Heading>
       <List marker="+ ">
