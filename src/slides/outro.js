@@ -1,7 +1,7 @@
 import React from 'react';
-import { Slide, SlideSet, Link } from 'spectacle';
+import { Slide, SlideSet } from 'spectacle';
 
-import { Text, Heading } from 'components';
+import { Text, Heading, Link } from 'components';
 
 export const outroSlides = (
   <SlideSet>
@@ -15,11 +15,14 @@ export const outroSlides = (
       >
         Thank You!
       </Heading>
-      <Text textSize="2.25rem">@winkerVSbecks</Text>
-      <Text textSize="2.25rem">varun.ca</Text>
-      <Text margin="4rem 0 0 0" textSize="2.25rem">
-        <Link href="https://tiny.cc/animation-math" textColor="secondary">
-          tiny.cc/animation-math
+      <Text margin="4rem 0 2rem 0" f={2}>
+        <Link href="https://tiny.cc/programming-design-systems">
+          tiny.cc/programming-design-systems
+        </Link>
+      </Text>
+      <Text f={2}>
+        <Link href="https://github.com/winkerVSbecks/programming-design-systems-workshop">
+          github.com/winkerVSbecks/programming-design-systems-workshop
         </Link>
       </Text>
     </Slide>

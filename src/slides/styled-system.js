@@ -64,7 +64,7 @@ export const styledSystemSlides = (
       </Text>
     </Slide>
     <Slide>
-      <div className="f3 pa3 bg-white black">JSX</div>
+      <div className="f3 pa3 bg-white black">JSX / Template</div>
       <div className="pv4">
         <Emoji v="⬇️" />
       </div>
@@ -82,7 +82,19 @@ export const styledSystemSlides = (
       <div className="f3 pa3 bg-white black">CSS</div>
     </Slide>
     <Slide>
-      <Heading f={1}>Styled Components</Heading>
+      <Heading f={1}>
+        Styled Components{' '}
+        <Link
+          f={3}
+          target="_blank"
+          textColor="blue"
+          lh="solid"
+          href="https://www.styled-components.com/docs/basics#getting-started"
+          className="inline-flex items-center"
+        >
+          API <img src="https://icon.now.sh/exit_to_app/20/2175FF" />
+        </Link>
+      </Heading>
       <AsymmetricComponentPlayground
         theme="dark"
         right={1.5}
@@ -169,7 +181,7 @@ export const styledSystemSlides = (
     </Slide>
     <Slide>
       <Heading f={1}>
-        Styled Components{' '}
+        System Components{' '}
         <Link
           f={3}
           target="_blank"
