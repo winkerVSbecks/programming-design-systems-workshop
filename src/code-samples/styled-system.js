@@ -125,8 +125,12 @@ const App = props => (
 
 `;
 
-export const systemComponentBox = `
-const Box = system(
+export const systemComponentBox = `const Box = system(
+  {
+    bg: 'white',
+    p: 2,
+    color: 'palevioletred',
+  },
   'space',
   'width',
   'fontSize',
@@ -135,11 +139,8 @@ const Box = system(
   'alignSelf',
 );
 
-render(
-  <Box bg="white" p={3} color="palevioletred">
-    This is a Box
-  </Box>
-);`;
+render(<Box p={3}>This is a Box</Box>);
+`;
 
 export const systemComponentCore = `
 const Box = system(
@@ -150,6 +151,7 @@ const Box = system(
   'flex',
   'alignSelf',
 );
+Box.displayName = 'Box';
 
 const Text = system(
   {
@@ -165,6 +167,7 @@ const Text = system(
   'textAlign',
   'lineHeight',
 );
+Text.displayName = 'Text';
 
 const Heading = system(
   {
@@ -181,6 +184,7 @@ const Heading = system(
   'textAlign',
   'lineHeight',
 );
+Heading.displayName = 'Heading';
 
 render(
   <Box p={3}>

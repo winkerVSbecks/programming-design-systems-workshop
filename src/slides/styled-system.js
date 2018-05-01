@@ -69,7 +69,7 @@ export const styledSystemSlides = (
         <Emoji v="⬇️" />
       </div>
       <div className="f3 pa3 bg-white black lh-copy">
-        styled-component, emotion, glamor, glamorous, cxs, fela (supports
+        styled-components, emotion, glamor, glamorous, cxs, fela (supports
         angular too), VueJS, etc.
       </div>
       <div className="pv4">
@@ -77,7 +77,7 @@ export const styledSystemSlides = (
       </div>
       <div className="f3 pa3 bg-white black">CSS</div>
     </Slide>
-    <Slide>
+    <Slide note="demo const Text = props => <p {...props} />;">
       <Heading f={1}>
         Styled Components{' '}
         <Link
@@ -121,54 +121,13 @@ export const styledSystemSlides = (
         code={codeSamples.styledSystemBox}
       />
     </Slide>
-    <CodeSlide
-      transition={[]}
-      lang="js"
-      textSize="1.75rem"
-      code={codeSamples.theme}
-      ranges={[
-        { loc: [0, 270], title: 'Design Constraints' },
-        { loc: [0, 1], note: 'theme.js' },
-        { loc: [1, 4], note: 'breakpoints' },
-        {
-          loc: [5, 16],
-          note: (
-            <div>
-              colours
-              <p>
-                nested objects work as well<br />
-                arrays can be used for scales of colors
-              </p>
-            </div>
-          ),
-        },
-        {
-          loc: [14, 17],
-          note: (
-            <div>
-              <p>space is used for margin and padding scales.</p>
-              <p>
-                It's recommended to use powers of two to ensure alignment when
-                used in nested elements.
-              </p>
-              <p>Numbers are converted to px</p>
-            </div>
-          ),
-        },
-        { loc: [17, 36], note: 'typographic scales' },
-        { loc: [36, 40], note: 'border styles' },
-        { loc: [43, 47], note: 'miscellaneous' },
-        { loc: [50, 66], note: 'Your Design System Constraints' },
-        { loc: [67, 78], note: 'Apply the theme' },
-      ]}
-    />
     <Slide>
       <div className="flex items-center">
         <div>system-components</div>
         <div className="flex-auto self-stretch br bw3 mr3" />
         <div>
           <div className="f3 pa3 bg-white black mb3">
-            clean-tag, clean-element, etc.
+            clean-tag, defaults, etc.
           </div>
           <div className="f3 pa3 bg-white black mb3">styled-system</div>
           <div className="f3 pa3 bg-white black">styled-components</div>
@@ -215,6 +174,47 @@ export const styledSystemSlides = (
         </ListItem>
       </List>
     </Slide>
+    <CodeSlide
+      transition={[]}
+      lang="js"
+      textSize="1.75rem"
+      code={codeSamples.theme}
+      ranges={[
+        { loc: [0, 270], title: 'Design Constraints' },
+        { loc: [0, 1], note: 'theme.js' },
+        { loc: [1, 4], note: 'breakpoints' },
+        {
+          loc: [5, 16],
+          note: (
+            <div>
+              colours
+              <p>
+                nested objects work as well<br />
+                arrays can be used for scales of colors
+              </p>
+            </div>
+          ),
+        },
+        {
+          loc: [14, 17],
+          note: (
+            <div>
+              <p>space is used for margin and padding scales.</p>
+              <p>
+                It's recommended to use powers of two to ensure alignment when
+                used in nested elements.
+              </p>
+              <p>Numbers are converted to px</p>
+            </div>
+          ),
+        },
+        { loc: [17, 36], note: 'typographic scales' },
+        { loc: [36, 40], note: 'border styles' },
+        { loc: [43, 47], note: 'miscellaneous' },
+        { loc: [50, 66], note: 'Your Design System Constraints' },
+        { loc: [67, 78], note: 'Apply the theme' },
+      ]}
+    />
     <Slide>
       <div>
         <AsymmetricComponentPlayground

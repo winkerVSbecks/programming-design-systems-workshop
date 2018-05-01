@@ -215,7 +215,31 @@ export const introSlides = (
       bgRepeat="no-repeat"
       bgColor="white"
       bgImage={images.tachyonsWorkflow}
-    />
+    >
+      <Appear>
+        <div className="mb4">
+          <Text f={2} bgColor="primary" padding="2rem 1.5rem">
+            <Emoji v="🙌🏽" /> Removes the mapping between components and CSS
+            class names
+          </Text>
+        </div>
+      </Appear>
+      <Appear>
+        <div className="mb4">
+          <Text f={2} bgColor="primary" padding="2rem 1.5rem">
+            <Emoji v="📦" /> Components as a low-level styling construct
+          </Text>
+        </div>
+      </Appear>
+      <Appear>
+        <div>
+          <Text f={2} bgColor="primary" padding="2rem 1.5rem">
+            <Emoji v="🤝" /> Designers can create a shared language with
+            developers
+          </Text>
+        </div>
+      </Appear>
+    </Slide>
     <Slide>
       <Heading f={1}>Component Based Design System</Heading>
       <List marker="+ ">
@@ -251,20 +275,6 @@ export const introSlides = (
           <Link href="https://material.io/components/web">
             Google Material for Web
           </Link>
-        </ListItem>
-      </List>
-    </Slide>
-    <Slide>
-      <Heading f={1}>Component Based Design System</Heading>
-      <List>
-        <ListItem f={2} margin="0 0 2rem 0">
-          Removes the mapping between components and styles
-        </ListItem>
-        <ListItem f={2} margin="0 0 2rem 0">
-          Components as a low-level styling construct
-        </ListItem>
-        <ListItem f={2} margin="0 0 2rem 0">
-          Designers can create a shared language with developers
         </ListItem>
       </List>
     </Slide>

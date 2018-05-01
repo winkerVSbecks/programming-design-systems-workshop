@@ -51,13 +51,13 @@ export const systemComponentsSlides = (
         <ListItem>
           Box <Inline f={2}>(general purpose layout component)</Inline>
         </ListItem>
-        <ListItem>Text</ListItem>
-        <ListItem>Heading</ListItem>
-        <ListItem>Card</ListItem>
+        <ListItem>Text & Heading</ListItem>
+        <ListItem>Card & Panel</ListItem>
         <ListItem>
-          Avatar <Inline f={2}>(circle image)</Inline>
+          Image & Avatar <Inline f={2}>(circle image)</Inline>
         </ListItem>
-        <ListItem>Button</ListItem>
+        <ListItem>Button & Link</ListItem>
+        <ListItem>Input, TextArea & Label</ListItem>
       </List>
     </Slide>
     <Slide bgColor="#F4F4F4">
@@ -68,13 +68,18 @@ export const systemComponentsSlides = (
     </Slide>
     <Slide bgColor="#F4F4F4">
       <div className="flex items-center overflow-hidden">
-        <Image
-          src={images.tachyonsCardSlices}
-          width={256}
-          style={{
-            border: '1px solid #036cdb',
-          }}
-        />
+        <div>
+          <Heading f={3} textColor="primary" margin="0 0 2rem 0">
+            Profile Card
+          </Heading>
+          <Image
+            src={images.tachyonsCardSlices}
+            width={256}
+            style={{
+              border: '1px solid #036cdb',
+            }}
+          />
+        </div>
         <Appear>
           <div>
             <CodePane

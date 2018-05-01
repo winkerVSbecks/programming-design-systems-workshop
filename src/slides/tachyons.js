@@ -86,15 +86,6 @@ export const tachyonsSlides = (
       </List>
     </Slide>
     <Slide>
-      <AsymmetricComponentPlayground
-        theme="dark"
-        code={codeSamples.tachyonsComponent}
-      />
-    </Slide>
-    <Slide>
-      <ImageCard src={images.formUi} width={800} />
-    </Slide>
-    <Slide>
       <Heading f={1} margin="0 0 4rem 0">
         Tachyons<br />Design System Components
       </Heading>
@@ -102,6 +93,9 @@ export const tachyonsSlides = (
       <Text>
         Props <Emoji v="🔀" /> Design System <Emoji v="➡️" /> className
       </Text>
+    </Slide>
+    <Slide>
+      <ImageCard src={images.formUi} width={800} />
     </Slide>
     <Slide
       notes={`
@@ -132,9 +126,23 @@ export const tachyonsSlides = (
       <CodePane textSize="1.4rem" source={codeSamples.curvedBox} />
     </Slide>
     <Slide>
-      <Heading f={1}>
-        Somewhat <Emoji v="⚠️" /> Experimental Tools
+      <Heading>
+        <Link
+          target="_blank"
+          f={3}
+          href="https://github.com/jxnblk/tachyons-components"
+        >
+          tachyons-components
+        </Link>
       </Heading>
+      <AsymmetricComponentPlayground
+        theme="dark"
+        scope={{ styled }}
+        code={codeSamples.tachyonsComponentButton}
+      />
+    </Slide>
+    <Slide>
+      <Heading f={1}>Tachyons System Component Tools</Heading>
       <List marker="+ ">
         <ListItem>
           <Link
@@ -175,22 +183,6 @@ export const tachyonsSlides = (
           <span className="f4">(not maintained, only for reference)</span>
         </ListItem>
       </List>
-    </Slide>
-    <Slide>
-      <Heading>
-        <Link
-          target="_blank"
-          f={3}
-          href="https://github.com/jxnblk/tachyons-components"
-        >
-          tachyons-components
-        </Link>
-      </Heading>
-      <AsymmetricComponentPlayground
-        theme="dark"
-        scope={{ styled }}
-        code={codeSamples.tachyonsComponentButton}
-      />
     </Slide>
   </SlideSet>
 );

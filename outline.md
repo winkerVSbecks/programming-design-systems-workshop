@@ -460,19 +460,12 @@ const ImageCard = ({ tl, tr, br, bl, img, title, ratio, ...props }) => (
 
 ---
 
-# Composing variations
-
----
-
-Slicing components exercise (group)
-
----
-
 Slicing components exercise (small groups)
 
----
-
-# Macro Components
+* Income tax calculator (Input group)
+* Change Allocation Details Form (Panel)
+* JetBlue in-flight options
+* Add User Profile Form
 
 ---
 
@@ -505,6 +498,12 @@ const CustomButton = styled(Button)`
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 `;
 ```
+
+---
+
+Input Adornment/Group
+https://react.semantic-ui.com/maximize/input-example-icon-position
+https://reactstrap.github.io/components/input-group/
 
 ---
 
