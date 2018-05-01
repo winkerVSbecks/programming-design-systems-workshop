@@ -61,7 +61,10 @@ export const systemComponentsSlides = (
       </List>
     </Slide>
     <Slide bgColor="#F4F4F4">
-      <Image src={images.tachyonsCard} width={256} />
+      <Heading f={3} textColor="primary" margin="0 0 2rem 0">
+        Exercise #1: Profile Card
+      </Heading>
+      <Image src={images.tachyonsCard} width={256} style={{ marginLeft: 0 }} />
     </Slide>
     <Slide bgColor="#F4F4F4">
       <div className="flex items-center overflow-hidden">
@@ -85,7 +88,7 @@ export const systemComponentsSlides = (
     </Slide>
     <Slide>
       <Heading f={3} margin="0 0 1rem 0">
-        Exercise # 1: Aldo Product Card
+        Exercise #2: Aldo Product Card
       </Heading>
       <div
         style={{
