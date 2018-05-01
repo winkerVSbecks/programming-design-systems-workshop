@@ -56,6 +56,7 @@ export const systemComponentsSlides = (
             projection
           </Inline>
         </ListItem>
+        <ListItem f={2}>Avoid recreating the platform</ListItem>
       </OrderedList>
     </Slide>
     <Slide>
