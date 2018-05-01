@@ -460,29 +460,18 @@ const ImageCard = ({ tl, tr, br, bl, img, title, ratio, ...props }) => (
 
 ---
 
+Input Adornment/Group
+https://react.semantic-ui.com/maximize/input-example-icon-position
+https://reactstrap.github.io/components/input-group/
+
+---
+
 Slicing components exercise (small groups)
 
 * Income tax calculator (Input group)
 * Change Allocation Details Form (Panel)
 * JetBlue in-flight options
 * Add User Profile Form
-
----
-
-# Rebass
-
-```
-          +--+
-          |  React
-Rebass ---+  clean-tag
-          |  styled-system
-          |  styled-components
-          +--+
-```
-
----
-
-## attributes
 
 ---
 
@@ -498,12 +487,6 @@ const CustomButton = styled(Button)`
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 `;
 ```
-
----
-
-Input Adornment/Group
-https://react.semantic-ui.com/maximize/input-example-icon-position
-https://reactstrap.github.io/components/input-group/
 
 ---
 
