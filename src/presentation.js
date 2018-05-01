@@ -10,6 +10,7 @@ import {
   tachyonsSlides,
   styledSystemSlides,
   outroSlides,
+  systemComponentsSlides,
 } from './slides';
 
 const theme = createTheme(colours, fontFamilies);
@@ -26,6 +27,7 @@ export default class Presentation extends React.Component {
         {introSlides}
         {tachyonsSlides}
         {styledSystemSlides}
+        {systemComponentsSlides}
         {outroSlides}
       </Deck>
     );

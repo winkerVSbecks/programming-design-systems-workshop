@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideSet, Slide, Image } from 'spectacle';
+import { SlideSet, Slide } from 'spectacle';
 import classNames from 'classnames';
 import styled from 'tachyons-components';
 

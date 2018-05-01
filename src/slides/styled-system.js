@@ -1,6 +1,5 @@
 import React from 'react';
 import { SlideSet, Slide, BlockQuote, Cite } from 'spectacle';
-import classNames from 'classnames';
 import styledSystem from 'styled-system';
 import styled, { css } from 'styled-components';
 import CodeSlide from 'spectacle-code-slide';
@@ -14,12 +13,9 @@ import {
   ListItem,
   Link,
   Inline,
-  ImageCard,
   AsymmetricComponentPlayground,
-  CodePane,
   Quote,
 } from 'components';
-import images from 'images';
 import * as codeSamples from 'code-samples';
 
 const gradient = 'linear-gradient(20deg, #db7093, #daa357)';
@@ -92,7 +88,7 @@ export const styledSystemSlides = (
           href="https://www.styled-components.com/docs/basics#getting-started"
           className="inline-flex items-center"
         >
-          API <img src="https://icon.now.sh/exit_to_app/20/2175FF" />
+          API <img alt="link" src="https://icon.now.sh/exit_to_app/20/2175FF" />
         </Link>
       </Heading>
       <AsymmetricComponentPlayground
@@ -114,7 +110,7 @@ export const styledSystemSlides = (
           href="https://github.com/jxnblk/styled-system#api"
           className="inline-flex items-center"
         >
-          API <img src="https://icon.now.sh/exit_to_app/20/2175FF" />
+          API <img alt="link" src="https://icon.now.sh/exit_to_app/20/2175FF" />
         </Link>
       </Heading>
       <AsymmetricComponentPlayground
@@ -190,7 +186,7 @@ export const styledSystemSlides = (
           href="https://github.com/jxnblk/styled-system#system-components"
           className="inline-flex items-center"
         >
-          API <img src="https://icon.now.sh/exit_to_app/20/2175FF" />
+          API <img alt="link" src="https://icon.now.sh/exit_to_app/20/2175FF" />
         </Link>
       </Heading>
       <AsymmetricComponentPlayground
@@ -229,16 +225,6 @@ export const styledSystemSlides = (
           code={codeSamples.systemComponentCore}
         />
       </div>
-    </Slide>
-    <Slide>
-      <Heading />
-      <Text>
-        <Link href="http://jxnblk.com/rebass/components" textColor="green">
-          rebass/components
-        </Link>{' '}
-        is a great example of the type of components you should build & good
-        APIs for design system components.
-      </Text>
     </Slide>
   </SlideSet>
 );
