@@ -142,5 +142,6 @@ export const systemComponentsSlides = (
       <Heading f={1}>Responsive Props</Heading>
       <CodePane textSize="1.5rem" source={codeSamples.responsiveProps} />
     </Slide>
+    <Slide>https://codesandbox.io/s/v86m4zkyy0</Slide>
   </SlideSet>
 );
