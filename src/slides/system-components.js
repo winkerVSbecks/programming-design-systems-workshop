@@ -18,6 +18,7 @@ import {
   AsymmetricComponentPlayground,
   CodePane,
   Quote,
+  OrderedList,
 } from 'components';
 import images from 'images';
 import * as codeSamples from 'code-samples';
@@ -37,13 +38,25 @@ export const systemComponentsSlides = (
       </Appear>
     </Slide>
     <Slide>
-      <Text>
-        <Link href="http://jxnblk.com/rebass/components" textColor="green">
-          rebass/components
-        </Link>{' '}
-        is a great example of the type of components you should build & good
-        APIs for design system components.
-      </Text>
+      <Heading f={1}>Component Best Practices</Heading>
+      <OrderedList>
+        <ListItem f={2}>Small Components</ListItem>
+        <ListItem f={2}>Compose Variations</ListItem>
+        <ListItem f={2}>Compose Complexity</ListItem>
+        <ListItem f={2}>
+          Use{' '}
+          <Inline green f={2}>
+            {'{children}'}
+          </Inline>,{' '}
+          <Inline blue f={2}>
+            slots
+          </Inline>{' '}
+          or{' '}
+          <Inline gold f={2}>
+            projection
+          </Inline>
+        </ListItem>
+      </OrderedList>
     </Slide>
     <Slide>
       <Heading f={1}>Basic Components</Heading>
@@ -52,13 +65,25 @@ export const systemComponentsSlides = (
           Box <Inline f={2}>(general purpose layout component)</Inline>
         </ListItem>
         <ListItem>Text & Heading</ListItem>
-        <ListItem>Card & Panel</ListItem>
+        <ListItem>
+          Card &{' '}
+          <Link href="http://jxnblk.com/rebass/components/Panel">Panel</Link>
+        </ListItem>
         <ListItem>
           Image & Avatar <Inline f={2}>(circle image)</Inline>
         </ListItem>
         <ListItem>Button & Link</ListItem>
         <ListItem>Input, TextArea & Label</ListItem>
       </List>
+    </Slide>
+    <Slide>
+      <Text>
+        <Link href="http://jxnblk.com/rebass/components" textColor="green">
+          rebass/components
+        </Link>{' '}
+        is a great example of the type of components you should build & good
+        APIs for design system components.
+      </Text>
     </Slide>
     <Slide bgColor="#F4F4F4">
       <Heading f={3} textColor="primary" margin="0 0 2rem 0">
