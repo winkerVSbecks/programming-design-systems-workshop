@@ -90,32 +90,37 @@ export const systemComponentsSlides = (
       <Heading f={3} textColor="primary" margin="0 0 2rem 0">
         Exercise #1: Profile Card
       </Heading>
-      <Image src={images.tachyonsCard} width={256} style={{ marginLeft: 0 }} />
-    </Slide>
-    <Slide bgColor="#F4F4F4">
-      <div className="flex items-center overflow-hidden">
-        <div>
-          <Heading f={3} textColor="primary" margin="0 0 2rem 0">
-            Profile Card
-          </Heading>
-          <Image
-            src={images.tachyonsCardSlices}
-            width={256}
-            style={{
-              border: '1px solid #036cdb',
-            }}
-          />
-        </div>
+      <div className="flex items-center">
+        <Image
+          src={images.tachyonsCard}
+          width={256}
+          style={{ marginLeft: 0 }}
+        />
         <Appear>
           <div>
-            <CodePane
-              margin="0 0 2rem 2rem"
-              textSize="1.4rem"
-              source={codeSamples.tachyonsCard}
+            <Image
+              src={images.tachyonsCardSlices}
+              width={256}
+              style={{
+                border: '1px solid #036cdb',
+              }}
             />
           </div>
         </Appear>
       </div>
+    </Slide>
+    <Slide>
+      <iframe
+        src="https://codesandbox.io/embed/v86m4zkyy0"
+        style={{
+          width: '100%',
+          height: 500,
+          border: 0,
+          borderRadius: 4,
+          overflow: 'hidden',
+        }}
+        sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+      />
     </Slide>
     <Slide>
       <Heading f={3} margin="0 0 1rem 0">
@@ -142,6 +147,5 @@ export const systemComponentsSlides = (
       <Heading f={1}>Responsive Props</Heading>
       <CodePane textSize="1.5rem" source={codeSamples.responsiveProps} />
     </Slide>
-    <Slide>https://codesandbox.io/s/v86m4zkyy0</Slide>
   </SlideSet>
 );

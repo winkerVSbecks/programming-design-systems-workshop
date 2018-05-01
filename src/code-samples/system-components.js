@@ -1,13 +1,24 @@
 export const tachyonsCard = `const ProfileCard = props => (
-  <Card width={5} borderRadius={2}>
-    <Box p={3} textAlign="center">
-      <Avatar w={3} h={3} src={props.image} />
-
-      <Heading>{props.name}</Heading>
-
-      <Heading is="h2" color="gray" fw={4}>
-        {props.title}
-      </Heading>
+  <Card
+    width={4}
+    p={[3, 4, 4]}
+    borderColor="black-10"
+  >
+    <Box textAlign="center">
+      <Avatar
+        width={3}
+        height={3}
+        borderColor="black-05"
+        src={props.image}
+      />
+      <Box p={2}>
+        <Heading fontSize={4} mb={2}>
+          {props.name}
+        </Heading>
+        <Text fontSize={2} my={0}>
+          {props.title}
+        </Text>
+      </Box>
     </Box>
   </Card>
 );`;
