@@ -34,11 +34,19 @@ export const introSlides = (
       </Text>
     </Slide>
     <Slide>
-      <Heading f={1}>Overview</Heading>
-      <List>
-        <ListItem>Design Constraints</ListItem>
-        <ListItem>Design System Components</ListItem>
-        <ListItem>Slicing Components</ListItem>
+      <Heading f={1} margin="0 0 8rem 0">
+        Learning Outcomes
+      </Heading>
+      <List marker=" ">
+        <ListItem margin="0 0 4rem 0">
+          <Emoji v="📐" /> Design Constraints
+        </ListItem>
+        <ListItem margin="0 0 4rem 0">
+          <Emoji v="✂️" /> Slicing & Composing Components
+        </ListItem>
+        <ListItem>
+          <Emoji v="👷🏽‍" /> Building Design System Components with Styled System
+        </ListItem>
       </List>
     </Slide>
     <Slide bgColor="secondary">
@@ -49,7 +57,7 @@ export const introSlides = (
     </Slide>
     <Slide>
       <Heading f={1}>Design Constraints</Heading>
-      <List marker="+ ">
+      <List marker="+">
         <ListItem>Colours</ListItem>
         <ListItem>Spacing: padding & margin</ListItem>
         <ListItem>Sizing: width & height</ListItem>
@@ -242,7 +250,7 @@ export const introSlides = (
     </Slide>
     <Slide>
       <Heading f={1}>Component Based Design System</Heading>
-      <List marker="+ ">
+      <List marker="+">
         <ListItem>
           <Link href="https://cloudflare.github.io/cf-ui/#cf-component-modal">
             Cloudflare cf-ui

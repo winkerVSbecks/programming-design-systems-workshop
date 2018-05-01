@@ -177,42 +177,43 @@ export const styledSystemSlides = (
     <CodeSlide
       transition={[]}
       lang="js"
-      textSize="1.75rem"
+      textSize="1.7rem"
       code={codeSamples.theme}
       ranges={[
-        { loc: [0, 270], title: 'Design Constraints' },
+        { loc: [0, 161], title: 'Design Constraints' },
         { loc: [0, 1], note: 'theme.js' },
-        { loc: [1, 4], note: 'breakpoints' },
+        { loc: [2, 3], note: 'breakpoints' },
         {
-          loc: [5, 16],
+          loc: [3, 4],
+          note: (
+            <div>
+              <p className="mt0">
+                space is used for margin and padding scales.
+              </p>
+              <p>
+                It's recommended to use powers of two to ensure alignment when
+                used in nested elements.
+              </p>
+              <p className="mb0">Numbers are converted to px</p>
+            </div>
+          ),
+        },
+        { loc: [4, 22], note: 'typographic scales' },
+        { loc: [22, 32], note: 'border styles' },
+        { loc: [32, 35], note: 'sizing' },
+        {
+          loc: [35, 55],
           note: (
             <div>
               colours
-              <p>
+              <p className="mb0">
                 nested objects work as well<br />
                 arrays can be used for scales of colors
               </p>
             </div>
           ),
         },
-        {
-          loc: [14, 17],
-          note: (
-            <div>
-              <p>space is used for margin and padding scales.</p>
-              <p>
-                It's recommended to use powers of two to ensure alignment when
-                used in nested elements.
-              </p>
-              <p>Numbers are converted to px</p>
-            </div>
-          ),
-        },
-        { loc: [17, 36], note: 'typographic scales' },
-        { loc: [36, 40], note: 'border styles' },
-        { loc: [43, 47], note: 'miscellaneous' },
-        { loc: [50, 66], note: 'Your Design System Constraints' },
-        { loc: [67, 78], note: 'Apply the theme' },
+        { loc: [107, 117], note: 'Apply the theme' },
       ]}
     />
     <Slide>

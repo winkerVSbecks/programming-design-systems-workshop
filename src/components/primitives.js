@@ -55,7 +55,7 @@ export const List = styled(Spectacle.List)`
   list-style: none;
 
   & li:before {
-    content: ${props => (props.marker ? `'${props.marker}'` : '"— "')};
+    content: ${props => (props.marker ? `'${props.marker} '` : '"— "')};
     font-weight: 500;
   }
 `;

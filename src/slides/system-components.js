@@ -144,8 +144,27 @@ export const systemComponentsSlides = (
       </div>
     </Slide>
     <Slide>
+      <Heading f={1}>Input Adornment/Group</Heading>
+      https://react.semantic-ui.com/maximize/input-example-icon-position
+      https://reactstrap.github.io/components/input-group
+    </Slide>
+    <Slide>
       <Heading f={1}>Responsive Props</Heading>
       <CodePane textSize="1.5rem" source={codeSamples.responsiveProps} />
+    </Slide>
+    <Slide>
+      <Heading f={1}>
+        Complex Styles https://github.com/jxnblk/styled-system#complex-styles
+      </Heading>
+    </Slide>
+    <Slide>
+      <Heading f={1}>Exercise #3: Slicing Components</Heading>
+      <List>
+        <ListItem f={2}>Income tax calculator (Input group)</ListItem>
+        <ListItem f={2}>Change Allocation Details Form (Panel)</ListItem>
+        <ListItem f={2}>JetBlue in-flight options</ListItem>
+        <ListItem f={2}>Add User Profile Form</ListItem>
+      </List>
     </Slide>
   </SlideSet>
 );

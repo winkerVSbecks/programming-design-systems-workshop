@@ -1,10 +1,27 @@
 import React from 'react';
 import { Slide, SlideSet } from 'spectacle';
 
-import { Text, Heading, Link } from 'components';
+import { Text, Heading, Link, List, ListItem } from 'components';
 
 export const outroSlides = (
   <SlideSet>
+    <Slide>
+      <Heading f={1}>Other Frameworks</Heading>
+      <List>
+        <ListItem margin="0 0 2rem 0">
+          <Link href="https://github.com/c8r/vue-styled-system">
+            vue-styled-system
+          </Link>{' '}
+          for Vue.JS
+        </ListItem>
+        <ListItem>
+          <Link href="http://fela.js.org/docs/guides/UsageWithAngular2.html">
+            Fela
+          </Link>{' '}
+          + styled-system for Angular
+        </ListItem>
+      </List>
+    </Slide>
     <Slide>
       <Heading
         bgColor="white"

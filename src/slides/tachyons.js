@@ -143,7 +143,7 @@ export const tachyonsSlides = (
     </Slide>
     <Slide>
       <Heading f={1}>Tachyons System Component Tools</Heading>
-      <List marker="+ ">
+      <List marker="+">
         <ListItem>
           <Link
             target="_blank"
