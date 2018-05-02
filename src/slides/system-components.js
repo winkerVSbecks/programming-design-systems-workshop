@@ -144,13 +144,25 @@ export const systemComponentsSlides = (
       </div>
     </Slide>
     <Slide>
-      <Heading f={1}>Input Adornment/Group</Heading>
-      https://react.semantic-ui.com/maximize/input-example-icon-position
-      https://reactstrap.github.io/components/input-group
-    </Slide>
-    <Slide>
       <Heading f={1}>Responsive Props</Heading>
       <CodePane textSize="1.5rem" source={codeSamples.responsiveProps} />
+    </Slide>
+    <Slide
+      notes="https://react.semantic-ui.com/maximize/input-example-icon-position
+      https://reactstrap.github.io/components/input-group"
+    >
+      <Heading f={2}>Input With Adornment</Heading>
+      <iframe
+        src="https://codesandbox.io/embed/myoj1yzwmx"
+        style={{
+          width: '100%',
+          height: 500,
+          border: 0,
+          borderRadius: 4,
+          overflow: 'hidden',
+        }}
+        sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+      />
     </Slide>
     <Slide>
       <Heading f={1}>

@@ -95,7 +95,7 @@ export const tachyonsSlides = (
       </Text>
     </Slide>
     <Slide>
-      <ImageCard src={images.formUi} width={800} />
+      <ImageCard src={images.formUi} width={733} />
     </Slide>
     <Slide
       notes={`
@@ -169,7 +169,7 @@ export const tachyonsSlides = (
             f={2}
             href="https://github.com/rangle/rubbr-installer/tree/master/src/styles/with-style-props/with-style-props.hoc.js"
           >
-            rangle/rubbr-installer/with-style-props
+            with-style-props HOC
           </Link>
         </ListItem>
         <ListItem>

@@ -89,7 +89,7 @@ export const theme = {
     'near-white': '#f4f4f4',
     white: '#fff',
     transparent: 'transparent',
-    black: [
+    blacks: [
       'rgba(0,0,0,.0125)',
       'rgba(0,0,0,.025)',
       'rgba(0,0,0,.05)',
@@ -103,7 +103,7 @@ export const theme = {
       'rgba(0,0,0,.8)',
       'rgba(0,0,0,.9)',
     ],
-    white: [
+    whites: [
       'rgba(255,255,255,.0125)',
       'rgba(255,255,255,.025)',
       'rgba(255,255,255,.05)',
