@@ -144,6 +144,19 @@ export const systemComponentsSlides = (
       </div>
     </Slide>
     <Slide>
+      <iframe
+        src="https://codesandbox.io/embed/woy5w424zl"
+        style={{
+          width: '100%',
+          height: 500,
+          border: 0,
+          borderRadius: 4,
+          overflow: 'hidden',
+        }}
+        sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+      />
+    </Slide>
+    <Slide>
       <Heading f={1}>Responsive Props</Heading>
       <CodePane textSize="1.5rem" source={codeSamples.responsiveProps} />
     </Slide>
@@ -180,3 +193,11 @@ export const systemComponentsSlides = (
     </Slide>
   </SlideSet>
 );
+
+// Grid ✅
+// ImageCard ✅
+// ProductTitle
+// ProductPrice
+// headingdash
+// ProductTag (Text) ✅
+// FavouriteButton ✅
