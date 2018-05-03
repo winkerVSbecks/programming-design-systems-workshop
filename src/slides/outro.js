@@ -23,6 +23,15 @@ export const outroSlides = (
       </List>
     </Slide>
     <Slide>
+      <Heading f={1}>Exercise #4: Slicing Components</Heading>
+      <List>
+        <ListItem f={2}>Income tax calculator (Input group)</ListItem>
+        <ListItem f={2}>Change Allocation Details Form (Panel)</ListItem>
+        <ListItem f={2}>JetBlue in-flight options</ListItem>
+        <ListItem f={2}>Add User Profile Form</ListItem>
+      </List>
+    </Slide>
+    <Slide>
       <Heading
         bgColor="white"
         textColor="primary"
@@ -33,7 +42,7 @@ export const outroSlides = (
         Thank You!
       </Heading>
       <Text margin="4rem 0 2rem 0" f={2}>
-        <Link href="http://tiny.cc/design-systems">tiny.cc/design-systems</Link>
+        <Link href="http://bit.do/design-systems">bit.do/design-systems</Link>
       </Text>
       <Text f={2}>
         <Link href="https://github.com/winkerVSbecks/programming-design-systems-workshop">

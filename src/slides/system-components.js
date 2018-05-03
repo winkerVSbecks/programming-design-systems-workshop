@@ -60,7 +60,7 @@ export const systemComponentsSlides = (
       </OrderedList>
     </Slide>
     <Slide>
-      <Heading f={1}>Basic Components</Heading>
+      <Heading f={1}>Core Components</Heading>
       <List>
         <ListItem>
           Box <Inline f={2}>(general purpose layout component)</Inline>
@@ -90,18 +90,18 @@ export const systemComponentsSlides = (
       <Heading f={1} margin="0 0 4rem 0">
         My Process
       </Heading>
-      <OrderedList>
+      <List marker="''">
         <ListItem f={2} margin="0 0 2rem 0">
-          Slice the component.
+          ✂️ Slice
         </ListItem>
         <ListItem f={2} margin="0 0 2rem 0">
-          Decide whether each sub-component is going to be a system component,
-          an extension or custom.
+          🔖 Assign{' '}
+          <Inline f={3}>(system-component, an extension or custom)</Inline>
         </ListItem>
         <ListItem f={2} margin="0 0 2rem 0">
-          Compose the sub-components to create the final component.
+          👨🏽‍🏭 Compose
         </ListItem>
-      </OrderedList>
+      </List>
     </Slide>
     <Slide bgColor="#F4F4F4">
       <Heading f={3} textColor="primary" margin="0 0 2rem 0">
@@ -230,15 +230,6 @@ export const systemComponentsSlides = (
         allow you to define reusable style objects in your theme for things like
         text styles and color combinations.
       </Text>
-    </Slide>
-    <Slide>
-      <Heading f={1}>Exercise #4: Slicing Components</Heading>
-      <List>
-        <ListItem f={2}>Income tax calculator (Input group)</ListItem>
-        <ListItem f={2}>Change Allocation Details Form (Panel)</ListItem>
-        <ListItem f={2}>JetBlue in-flight options</ListItem>
-        <ListItem f={2}>Add User Profile Form</ListItem>
-      </List>
     </Slide>
   </SlideSet>
 );

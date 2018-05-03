@@ -41,7 +41,7 @@ render(
 
 export const heading = `<Heading
   level={2}
-  f={5}
+  f={{ all: 5, m: 4, l: 3 }}
   lh="solid"
   color="navy"
   bg="light-purple"
@@ -52,7 +52,7 @@ export const heading = `<Heading
 </Heading>`;
 
 export const headingRender = `<h2
-  class="f5 f4-m f3-ns lh-solid navy bg-light-purple mt0 flex-auto"
+  class="f5 f4-m f3-l lh-solid navy bg-light-purple mt0 flex-auto"
 >
   Section Heading
 <h2/>`;

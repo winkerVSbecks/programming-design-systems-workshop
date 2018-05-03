@@ -23,7 +23,7 @@ export const introSlides = (
     <Slide>
       <Heading f={1}>Slides</Heading>
       <Text margin="4rem 0 0 0" textSize="2.25rem">
-        <Link href="http://tiny.cc/design-systems">tiny.cc/design-systems</Link>
+        <Link href="http://bit.do/design-systems">bit.do/design-systems</Link>
       </Text>
       <Text margin="4rem 0 0 0" textSize="2.25rem">
         <Link href="https://github.com/winkerVSbecks/programming-design-systems-workshop">
