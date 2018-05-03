@@ -86,6 +86,23 @@ export const systemComponentsSlides = (
         APIs for design system components.
       </Text>
     </Slide>
+    <Slide>
+      <Heading f={1} margin="0 0 4rem 0">
+        My Process
+      </Heading>
+      <OrderedList>
+        <ListItem f={2} margin="0 0 2rem 0">
+          Slice the component.
+        </ListItem>
+        <ListItem f={2} margin="0 0 2rem 0">
+          Decide whether each sub-component is going to be a system component,
+          an extension or custom.
+        </ListItem>
+        <ListItem f={2} margin="0 0 2rem 0">
+          Compose the sub-components to create the final component.
+        </ListItem>
+      </OrderedList>
+    </Slide>
     <Slide bgColor="#F4F4F4">
       <Heading f={3} textColor="primary" margin="0 0 2rem 0">
         Exercise #1: Profile Card
@@ -123,8 +140,33 @@ export const systemComponentsSlides = (
       />
     </Slide>
     <Slide>
+      <Heading f={1}>Responsive Props</Heading>
+      <CodePane textSize="1.5rem" source={codeSamples.responsiveProps} />
+    </Slide>
+    <Slide>
+      <Heading f={1}>Extending Components</Heading>
+      <CodePane textSize="1.5rem" source={codeSamples.extendingComponents} />
+    </Slide>
+    <Slide
+      notes="https://react.semantic-ui.com/maximize/input-example-icon-position
+      https://reactstrap.github.io/components/input-group"
+    >
+      <Heading f={2}>Exercise #2: Input With Adornment</Heading>
+      <iframe
+        src="https://codesandbox.io/embed/myoj1yzwmx"
+        style={{
+          width: '100%',
+          height: 500,
+          border: 0,
+          borderRadius: 4,
+          overflow: 'hidden',
+        }}
+        sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+      />
+    </Slide>
+    <Slide>
       <Heading f={3} margin="0 0 1rem 0">
-        Exercise #2: Aldo Product Card
+        Exercise #3: Aldo Product Card
       </Heading>
       <div
         style={{
@@ -157,27 +199,6 @@ export const systemComponentsSlides = (
       />
     </Slide>
     <Slide>
-      <Heading f={1}>Responsive Props</Heading>
-      <CodePane textSize="1.5rem" source={codeSamples.responsiveProps} />
-    </Slide>
-    <Slide
-      notes="https://react.semantic-ui.com/maximize/input-example-icon-position
-      https://reactstrap.github.io/components/input-group"
-    >
-      <Heading f={2}>Input With Adornment</Heading>
-      <iframe
-        src="https://codesandbox.io/embed/myoj1yzwmx"
-        style={{
-          width: '100%',
-          height: 500,
-          border: 0,
-          borderRadius: 4,
-          overflow: 'hidden',
-        }}
-        sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-      />
-    </Slide>
-    <Slide>
       <Heading f={1}>
         Complex Styles https://github.com/jxnblk/styled-system#complex-styles
       </Heading>
@@ -193,11 +214,3 @@ export const systemComponentsSlides = (
     </Slide>
   </SlideSet>
 );
-
-// Grid ✅
-// ImageCard ✅
-// ProductTitle
-// ProductPrice
-// headingdash
-// ProductTag (Text) ✅
-// FavouriteButton ✅

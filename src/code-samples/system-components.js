@@ -32,3 +32,17 @@ export const responsiveProps = `
   ]}
 />
 `;
+
+export const extendingComponents = `const Box = system( … );
+
+const Flex = Box.extend\`
+  display: flex;
+\`;
+
+const Fill = Box.extend\`
+  flex: 1 1 0;
+\`;
+
+const Fit = Box.extend\`
+  flex: none;
+\`;`;
