@@ -127,6 +127,7 @@ export const systemComponentsSlides = (
       </div>
     </Slide>
     <Slide>
+      <Heading f={3}>Exercise #1: Profile Card (solution)</Heading>
       <iframe
         src="https://codesandbox.io/embed/v86m4zkyy0"
         style={{
@@ -151,7 +152,7 @@ export const systemComponentsSlides = (
       notes="https://react.semantic-ui.com/maximize/input-example-icon-position
       https://reactstrap.github.io/components/input-group"
     >
-      <Heading f={2}>Exercise #2: Input With Adornment</Heading>
+      <Heading f={3}>Exercise #2: Input With Adornment</Heading>
       <iframe
         src="https://codesandbox.io/embed/myoj1yzwmx"
         style={{
@@ -186,6 +187,25 @@ export const systemComponentsSlides = (
       </div>
     </Slide>
     <Slide>
+      <Heading f={3} margin="0 0 1rem 0">
+        Exercise #3: Aldo Product Card
+      </Heading>
+      <iframe
+        src="https://codesandbox.io/embed/q391k8rqm4"
+        style={{
+          width: '100%',
+          height: 500,
+          border: 0,
+          borderRadius: 4,
+          overflow: 'hidden',
+        }}
+        sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+      />
+    </Slide>
+    <Slide>
+      <Heading f={3} margin="0 0 1rem 0">
+        Exercise #3: Aldo Product Card (solution)
+      </Heading>
       <iframe
         src="https://codesandbox.io/embed/woy5w424zl"
         style={{
@@ -199,12 +219,20 @@ export const systemComponentsSlides = (
       />
     </Slide>
     <Slide>
-      <Heading f={1}>
-        Complex Styles https://github.com/jxnblk/styled-system#complex-styles
-      </Heading>
+      <Heading f={1}>Complex Styles</Heading>
+      <Text>
+        <Link
+          textColor="blue"
+          href="https://github.com/jxnblk/styled-system#complex-styles"
+        >
+          styled-system#complex-styles
+        </Link>{' '}
+        allow you to define reusable style objects in your theme for things like
+        text styles and color combinations.
+      </Text>
     </Slide>
     <Slide>
-      <Heading f={1}>Exercise #3: Slicing Components</Heading>
+      <Heading f={1}>Exercise #4: Slicing Components</Heading>
       <List>
         <ListItem f={2}>Income tax calculator (Input group)</ListItem>
         <ListItem f={2}>Change Allocation Details Form (Panel)</ListItem>
